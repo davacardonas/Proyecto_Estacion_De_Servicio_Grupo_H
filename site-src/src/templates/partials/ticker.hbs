@@ -1,0 +1,10 @@
+<div class="ticker">
+  <div class="ticker__track">
+    {{#each ticker}}
+    <span class="ticker__item">{{icon "tag"}}{{this}}</span>
+    {{/each}}
+    {{#each ticker}}
+    <span class="ticker__item" aria-hidden="true">{{icon "tag"}}{{this}}</span>
+    {{/each}}
+  </div>
+</div>

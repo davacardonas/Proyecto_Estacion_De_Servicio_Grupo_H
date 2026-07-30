@@ -1,0 +1,173 @@
+{
+  "site": {
+    "title": "Texaco Centro de Servicio · Tegucigalpa",
+    "brand": {
+      "name": "TEXACO",
+      "tagline": "CENTRO DE SERVICIO · TEGUCIGALPA"
+    }
+  },
+  "nav": [
+    { "label": "GASOLINERA", "href": "#gasolinera" },
+    { "label": "FARMACIA", "href": "#farmacia" },
+    { "label": "SUPERMERCADO", "href": "#supermercado" },
+    { "label": "RESTAURANTE", "href": "#restaurante" },
+    { "label": "UBICACIÓN", "href": "#ubicacion" },
+    { "label": "NOSOTROS", "href": "#nosotros" },
+    { "label": "CONTACTO", "href": "#contacto" }
+  ],
+  "hero": {
+    "eyebrow": "TEGUCIGALPA, HONDURAS · CARRETERA AL NORTE",
+    "headingLine1": "UN SOLO",
+    "headingHighlight": "ALTO.",
+    "headingLine2": "TODO LO QUE",
+    "headingLine3": "NECESITÁS.",
+    "paragraph": "Gasolinera, farmacia, supermercado y restaurante bajo un mismo techo. Abiertos todos los días en la vía principal de Tegucigalpa.",
+    "ctaPrimary": { "label": "VER UBICACIÓN", "href": "#ubicacion" },
+    "ctaSecondary": { "label": "CONTACTARNOS", "href": "#contacto" }
+  },
+  "statusBar": {
+    "text": "Gasolinera abierta 24 horas · 7 días a la semana"
+  },
+  "ticker": [
+    "MINI SUPERMERCADO",
+    "RESTAURANTE TÍPICO",
+    "CARRETERA AL NORTE · TEGUCIGALPA",
+    "GASOLINERA 24 HORAS",
+    "FARMACIA"
+  ],
+  "about": {
+    "heading": "CENTRO DE SERVICIO COMPLETO",
+    "paragraphs": [
+      "Somos el punto de parada más completo de la Carretera al Norte. Desde que abrimos nuestras puertas en 1998, hemos atendido a miles de familias hondureñas y conductores que buscan comodidad, confianza y buenos precios en un solo lugar.",
+      "Ya sea que necesités repostar, comprar una medicina, hacer el mercado o disfrutar un desayuno típico antes de seguir viaje — aquí encontrás todo."
+    ],
+    "stats": [
+      { "value": "24/7", "label": "Gasolinera siempre disponible" },
+      { "value": "+25 AÑOS", "label": "Sirviendo a Tegucigalpa" },
+      { "value": "4 SERVICIOS", "label": "Todo bajo un mismo techo" },
+      { "value": "100% TEXACO", "label": "Combustible certificado" }
+    ]
+  },
+  "hours": [
+    { "icon": "pump", "name": "GASOLINERA", "schedule": "24 horas · 7 días" },
+    { "icon": "cross", "name": "FARMACIA", "schedule": "Lun–Dom · 7am–10pm" },
+    { "icon": "cart", "name": "SUPERMERCADO", "schedule": "Lun–Dom · 7am–9pm" },
+    { "icon": "fork", "name": "RESTAURANTE", "schedule": "Lun–Dom · 6am–9pm" }
+  ],
+  "services": {
+    "heading": "NUESTROS SERVICIOS",
+    "items": [
+      {
+        "id": "gasolinera",
+        "icon": "pump",
+        "name": "GASOLINERA",
+        "description": "Regular, Superior y Diésel · Aceites y lubricantes · Llantería",
+        "image": "img-gasolinera",
+        "cta": "VER MÁS"
+      },
+      {
+        "id": "farmacia",
+        "icon": "cross",
+        "name": "FARMACIA",
+        "description": "Medicamentos, vitaminas y productos de salud · Atención personalizada",
+        "image": "img-farmacia",
+        "cta": "VER MÁS"
+      },
+      {
+        "id": "supermercado",
+        "icon": "cart",
+        "name": "SUPERMERCADO",
+        "description": "Abarrotes, frutas, verduras, carnes y productos de primera necesidad",
+        "image": "img-supermercado",
+        "cta": "VER MÁS"
+      },
+      {
+        "id": "restaurante",
+        "icon": "fork",
+        "name": "RESTAURANTE",
+        "description": "Comida típica hondureña · Desayunos · Café de altura · Platos del día",
+        "image": "img-restaurante",
+        "cta": "VER MÁS"
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "Paro aquí cada vez que bajo a Tegucigalpa. El desayuno del restaurante es de los mejores de la carretera, y sé que el combustible siempre es de calidad Texaco.",
+    "authorInitial": "M",
+    "authorName": "MARÍA JOSÉ RODRÍGUEZ",
+    "authorRole": "Conductora de ruta · Siguatepeque–Tegucigalpa",
+    "image": "img-tegucigalpa",
+    "badge": "MÁS DE 25 AÑOS SIRVIENDO HONDURAS"
+  },
+  "promo": {
+    "eyebrow": "PROMOCIÓN · JULIO 2025",
+    "heading": "5% DESCUENTO",
+    "headingLine2": "EN COMBUSTIBLE",
+    "description": "Con compra mínima de L. 200 en el supermercado o restaurante. Válido de lunes a viernes, sujeto a disponibilidad.",
+    "cta": { "label": "VER CONDICIONES", "href": "#" }
+  },
+  "location": {
+    "heading": "CÓMO LLEGAR",
+    "eyebrow": "DIRECCIÓN",
+    "addressLines": [
+      "CARRETERA AL NORTE",
+      "COL. LAS UVAS, TEGUCIGALPA",
+      "FRANCISCO MORAZÁN, HONDURAS"
+    ],
+    "reference": "Frente al semáforo de Col. Las Uvas",
+    "phone": "(504) 2200-1234",
+    "email": "info@texacotegucigalpa.hn",
+    "cta": { "label": "CÓMO LLEGAR", "href": "#" },
+    "mapsLabel": "Abrir en Maps"
+  },
+  "contact": {
+    "heading": "ESCRIBINOS",
+    "paragraph": "¿Tenés preguntas, sugerencias o querés información sobre nuestros servicios? Completá el formulario y te respondemos pronto.",
+    "phone": "(504) 2200-1234",
+    "email": "info@texacotegucigalpa.hn",
+    "officeHoursLabel": "HORARIO DE OFICINA",
+    "officeHours": "Lun–Vie 8am–5pm",
+    "form": {
+      "name": { "label": "NOMBRE", "placeholder": "Tu nombre completo" },
+      "email": { "label": "CORREO", "placeholder": "tucorreo@ejemplo.com" },
+      "message": { "label": "MENSAJE", "placeholder": "¿En qué podemos ayudarte?" },
+      "submit": "ENVIAR MENSAJE"
+    }
+  },
+  "newsletter": {
+    "heading": "SUSCRÍBETE AL BOLETÍN",
+    "paragraph": "Recibí ofertas y novedades directo a tu correo.",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "tucorreo@ejemplo.com",
+    "submit": "SUSCRIBIRSE"
+  },
+  "footer": {
+    "address": [
+      "Carretera al Norte, frente a Col. Las Uvas",
+      "Tegucigalpa, Francisco Morazán",
+      "Honduras, C.A."
+    ],
+    "phone": "(504) 2200-1234",
+    "email": "info@texacotegucigalpa.hn",
+    "columns": [
+      {
+        "heading": "GASOLINERA",
+        "links": ["Gasolina Regular", "Gasolina Superior", "Diésel", "Aceites y Lubricantes", "24 horas · 7 días"]
+      },
+      {
+        "heading": "FARMACIA",
+        "links": ["Medicamentos Genéricos", "Vitaminas y Suplementos", "Cuidado Personal", "Productos de Bebé", "Lun–Dom 7am–10pm"]
+      },
+      {
+        "heading": "SUPERMERCADO",
+        "links": ["Abarrotes y Lácteos", "Frutas y Verduras", "Carnes y Embutidos", "Bebidas y Snacks", "Lun–Dom 7am–9pm"]
+      },
+      {
+        "heading": "RESTAURANTE",
+        "links": ["Desayunos Típicos", "Platos del Día", "Café y Bebidas", "Antojitos y Bocas", "Lun–Dom 6am–9pm"]
+      }
+    ],
+    "copyright": "© 2025 Texaco Centro de Servicio · Tegucigalpa, Honduras. Todos los derechos reservados.",
+    "privacyLabel": "POLÍTICA DE PRIVACIDAD"
+  }
+}

@@ -1,0 +1,94 @@
+.services {
+  padding: 90px 24px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (max-width: @bp-tablet) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.service-card {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  color: @color-white;
+  border-left: 4px solid @color-red;
+
+  &--img-gasolinera {
+    .card-image(#111111, #2b2b2b);
+    background-image:
+      linear-gradient(160deg, fade(#0c0c0c, 88%), fade(#2c2c2c, 88%)),
+      repeating-linear-gradient(115deg, fade(@color-red, 10%) 0 2px, transparent 2px 26px);
+  }
+  &--img-farmacia {
+    background-image:
+      linear-gradient(160deg, fade(#123021, 90%), fade(#0d2038, 90%)),
+      repeating-linear-gradient(90deg, fade(@color-white, 6%) 0 1px, transparent 1px 22px);
+  }
+  &--img-supermercado {
+    background-image:
+      linear-gradient(160deg, fade(#3a2a08, 90%), fade(#5c3a0d, 90%)),
+      repeating-linear-gradient(45deg, fade(@color-white, 6%) 0 1px, transparent 1px 20px);
+  }
+  &--img-restaurante {
+    background-image:
+      linear-gradient(160deg, fade(#3a0f0f, 90%), fade(#5c1616, 90%)),
+      repeating-linear-gradient(-45deg, fade(@color-white, 6%) 0 1px, transparent 1px 24px);
+  }
+
+  &__scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, fade(#000, 78%) 0%, transparent 55%);
+  }
+
+  &__body {
+    position: relative;
+    z-index: 1;
+    padding: 26px 28px;
+    width: 100%;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: @font-body;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+
+    svg {
+      color: @color-red;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__desc {
+    color: fade(@color-white, 82%);
+    font-size: 14px;
+    margin-bottom: 14px;
+    max-width: 440px;
+  }
+
+  &__link {
+    .eyebrow-label();
+    color: @color-red;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten(@color-red, 12%);
+    }
+  }
+}

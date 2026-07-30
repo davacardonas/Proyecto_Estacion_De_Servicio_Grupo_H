@@ -1,0 +1,13 @@
+<section class="hours">
+  <div class="container hours__grid">
+    {{#each hours}}
+    <div class="hours__item">
+      <span class="hours__icon">{{icon this.icon}}</span>
+      <span class="hours__text">
+        <span class="hours__name">{{this.name}}</span>
+        <span class="hours__schedule">{{this.schedule}}</span>
+      </span>
+    </div>
+    {{/each}}
+  </div>
+</section>

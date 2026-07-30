@@ -1,0 +1,27 @@
+<section class="hero" id="top">
+  <div class="hero__media" aria-hidden="true">
+    <div class="hero__scene">
+      <div class="hero__canopy"></div>
+      <div class="hero__pumps">
+        <div class="hero__pump"></div>
+        <div class="hero__pump"></div>
+      </div>
+      <div class="hero__lights"></div>
+    </div>
+  </div>
+
+  <div class="container hero__content">
+    <p class="hero__eyebrow"><span class="hero__eyebrow-rule"></span>{{hero.eyebrow}}</p>
+    <h1 class="hero__heading">
+      <span>{{hero.headingLine1}}</span>
+      <span class="hero__heading--accent">{{hero.headingHighlight}}</span>
+      <span>{{hero.headingLine2}}</span>
+      <span>{{hero.headingLine3}}</span>
+    </h1>
+    <p class="hero__paragraph">{{hero.paragraph}}</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="{{hero.ctaPrimary.href}}">{{hero.ctaPrimary.label}}</a>
+      <a class="btn btn--outline" href="{{hero.ctaSecondary.href}}">{{hero.ctaSecondary.label}}</a>
+    </div>
+  </div>
+</section>

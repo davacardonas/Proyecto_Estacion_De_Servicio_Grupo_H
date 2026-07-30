@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark">{{icon "star"}}</span>
+      <span class="brand__text">
+        <span class="brand__name">{{site.brand.name}}</span>
+        <span class="brand__tagline">{{site.brand.tagline}}</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul class="main-nav__list">
+        {{#each nav}}
+        <li><a href="{{this.href}}">{{this.label}}</a></li>
+        {{/each}}
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

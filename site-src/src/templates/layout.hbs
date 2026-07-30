@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{site.title}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  {{> header nav=nav site=site}}
+
+  <main>
+    {{> hero hero=hero}}
+    {{> status-bar statusBar=statusBar}}
+    {{> ticker ticker=ticker}}
+    {{> about about=about}}
+    {{> hours hours=hours}}
+    {{> services services=services}}
+    {{> testimonial testimonial=testimonial}}
+    {{> promo promo=promo}}
+    {{> location location=location}}
+    {{> contact contact=contact}}
+    {{> newsletter newsletter=newsletter}}
+  </main>
+
+  {{> footer footer=footer}}
+
+  <button class="help-fab" type="button" aria-label="Ayuda">?</button>
+</body>
+</html>

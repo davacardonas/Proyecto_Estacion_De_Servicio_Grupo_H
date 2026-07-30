@@ -1,0 +1,17 @@
+{
+  "name": "texaco-web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:site": "node site-src/build.cjs"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.9",
+    "less": "^4.8.1",
+    "vite": "^8.2.0"
+  }
+}

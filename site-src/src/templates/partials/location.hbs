@@ -1,0 +1,27 @@
+<section class="location container" id="ubicacion">
+  <h2 class="section-heading"><span class="section-heading__bar"></span>{{location.heading}}</h2>
+
+  <div class="location__grid">
+    <div class="location__card">
+      <p class="location__eyebrow">{{location.eyebrow}}</p>
+      <p class="location__address">
+        {{#each location.addressLines}}
+        {{this}}<br>
+        {{/each}}
+      </p>
+
+      <ul class="location__meta">
+        <li>{{icon "pin"}}{{location.reference}}</li>
+        <li>{{icon "phone"}}{{location.phone}}</li>
+        <li>{{icon "mail"}}{{location.email}}</li>
+      </ul>
+
+      <a class="btn btn--primary" href="{{location.cta.href}}">{{location.cta.label}} <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="location__map">
+      <a class="location__map-badge" href="{{location.cta.href}}">{{location.mapsLabel}} <span aria-hidden="true">↗</span></a>
+      <div class="location__map-canvas" role="img" aria-label="Mapa de ubicación de Texaco Centro de Servicio"></div>
+    </div>
+  </div>
+</section>

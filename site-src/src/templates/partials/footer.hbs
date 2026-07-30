@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <a class="brand" href="#top">
+        <span class="brand__mark">{{icon "star"}}</span>
+        <span class="brand__text">
+          <span class="brand__name">TEXACO</span>
+          <span class="brand__tagline">CENTRO DE SERVICIO</span>
+        </span>
+      </a>
+      <p>
+        {{#each footer.address}}
+        {{this}}<br>
+        {{/each}}
+      </p>
+      <p>
+        <a href="tel:{{footer.phone}}">☎ {{footer.phone}}</a><br>
+        <a href="mailto:{{footer.email}}">✉ {{footer.email}}</a>
+      </p>
+    </div>
+
+    {{#each footer.columns}}
+    <div class="site-footer__col">
+      <h3>{{this.heading}}</h3>
+      <ul>
+        {{#each this.links}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    {{/each}}
+  </div>
+
+  <div class="container site-footer__bottom">
+    <p>{{footer.copyright}}</p>
+    <a href="#">{{footer.privacyLabel}}</a>
+  </div>
+</footer>

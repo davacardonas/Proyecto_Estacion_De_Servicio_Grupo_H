@@ -1,0 +1,13 @@
+<section class="newsletter">
+  <div class="container newsletter__inner">
+    <div class="newsletter__text">
+      <h2>{{newsletter.heading}}</h2>
+      <p>{{newsletter.paragraph}}</p>
+    </div>
+    <form class="newsletter__form" method="post" action="#">
+      <input type="text" name="name" placeholder="{{newsletter.namePlaceholder}}" aria-label="{{newsletter.namePlaceholder}}">
+      <input type="email" name="email" placeholder="{{newsletter.emailPlaceholder}}" aria-label="{{newsletter.emailPlaceholder}}">
+      <button type="submit">{{newsletter.submit}}</button>
+    </form>
+  </div>
+</section>

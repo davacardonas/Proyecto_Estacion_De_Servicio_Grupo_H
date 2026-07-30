@@ -1,0 +1,39 @@
+.promo {
+  background: @color-red;
+  background-image: repeating-linear-gradient(
+    50deg,
+    fade(@color-white, 6%) 0,
+    fade(@color-white, 6%) 18px,
+    transparent 18px,
+    transparent 42px
+  );
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 68px 24px;
+    flex-wrap: wrap;
+  }
+
+  &__eyebrow {
+    .eyebrow-label();
+    color: fade(@color-white, 85%);
+    margin-bottom: 14px;
+  }
+
+  &__heading {
+    font-family: @font-display;
+    color: @color-white;
+    font-size: clamp(30px, 4.2vw, 46px);
+    line-height: 1.08;
+    margin-bottom: 14px;
+  }
+
+  &__desc {
+    color: fade(@color-white, 88%);
+    max-width: 480px;
+    margin-bottom: 0;
+  }
+}

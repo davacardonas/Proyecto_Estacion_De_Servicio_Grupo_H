@@ -1,0 +1,39 @@
+<section class="contact container" id="contacto">
+  <div class="contact__info">
+    <h2 class="section-heading"><span class="section-heading__bar"></span>{{contact.heading}}</h2>
+    <p>{{contact.paragraph}}</p>
+
+    <dl class="contact__details">
+      <div class="contact__detail">
+        <dt>{{icon "phone"}}TELÉFONO</dt>
+        <dd>{{contact.phone}}</dd>
+      </div>
+      <div class="contact__detail">
+        <dt>{{icon "mail"}}CORREO ELECTRÓNICO</dt>
+        <dd>{{contact.email}}</dd>
+      </div>
+      <div class="contact__detail">
+        <dt>{{icon "clock"}}{{contact.officeHoursLabel}}</dt>
+        <dd>{{contact.officeHours}}</dd>
+      </div>
+    </dl>
+  </div>
+
+  <form class="contact__form" method="post" action="#">
+    <div class="contact__form-row">
+      <div class="field">
+        <label for="name">{{contact.form.name.label}}<span aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" placeholder="{{contact.form.name.placeholder}}" required>
+      </div>
+      <div class="field">
+        <label for="email">{{contact.form.email.label}}<span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" placeholder="{{contact.form.email.placeholder}}" required>
+      </div>
+    </div>
+    <div class="field">
+      <label for="message">{{contact.form.message.label}}<span aria-hidden="true">*</span></label>
+      <textarea id="message" name="message" rows="5" placeholder="{{contact.form.message.placeholder}}" required></textarea>
+    </div>
+    <button class="btn btn--primary btn--block" type="submit">{{contact.form.submit}}</button>
+  </form>
+</section>

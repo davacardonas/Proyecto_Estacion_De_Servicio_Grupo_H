@@ -1,0 +1,88 @@
+.site-header {
+  background: @color-near-black;
+  border-bottom: 1px solid fade(@color-white, 8%);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: @color-white;
+
+  &__mark {
+    color: @color-red;
+    width: 26px;
+    height: 26px;
+    display: inline-flex;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  &__name {
+    font-family: @font-display;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+  }
+
+  &__tagline {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: fade(@color-white, 55%);
+  }
+}
+
+.main-nav {
+  &__list {
+    display: flex;
+    gap: 28px;
+
+    a {
+      .eyebrow-label();
+      color: fade(@color-white, 80%);
+      text-decoration: none;
+      transition: color 160ms @ease;
+
+      &:hover {
+        color: @color-white;
+      }
+    }
+  }
+
+  @media (max-width: @bp-tablet) {
+    display: none;
+  }
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  span {
+    height: 2px;
+    background: @color-white;
+    border-radius: 1px;
+  }
+
+  @media (max-width: @bp-tablet) {
+    display: flex;
+  }
+}

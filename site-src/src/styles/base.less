@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: @font-body;
+  color: @color-ink;
+  background: @color-white;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: @font-display;
+  line-height: 1.05;
+}
+
+p {
+  margin: 0 0 16px;
+  color: @color-muted;
+}
+
+svg {
+  width: 1em;
+  height: 1em;
+}
+
+.container {
+  .container();
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: clamp(26px, 3vw, 34px);
+  color: @color-ink;
+  margin-bottom: 20px;
+
+  &__bar {
+    width: 5px;
+    height: 30px;
+    background: @color-red;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+}
+
+.btn {
+  .btn-base();
+
+  &--primary {
+    background: @color-red;
+    color: @color-white;
+    border-color: @color-red;
+
+    &:hover {
+      background: @color-red-dark;
+      border-color: @color-red-dark;
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    color: @color-white;
+    border-color: @color-white;
+
+    &:hover {
+      background: @color-white;
+      color: @color-ink;
+    }
+  }
+
+  &--light {
+    background: @color-white;
+    color: @color-red;
+    border-color: @color-white;
+
+    &:hover {
+      background: transparent;
+      color: @color-white;
+    }
+  }
+
+  &--block {
+    width: 100%;
+  }
+}
+
+.help-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: @color-red;
+  color: @color-white;
+  font-family: @font-body;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px fade(@color-black, 25%);
+  z-index: 40;
+
+  &:hover {
+    background: @color-red-dark;
+  }
+}

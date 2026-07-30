@@ -1,0 +1,143 @@
+.newsletter {
+  background: @color-red;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 40px 24px;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    color: @color-white;
+
+    h2 {
+      font-family: @font-display;
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    p {
+      color: fade(@color-white, 88%);
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    input {
+      padding: 13px 16px;
+      border: none;
+      border-radius: @radius;
+      font-family: @font-body;
+      font-size: 14px;
+      min-width: 200px;
+
+      &::placeholder {
+        color: fade(@color-ink, 45%);
+      }
+      &:focus {
+        outline: 3px solid fade(@color-white, 60%);
+      }
+    }
+
+    button {
+      .btn-base();
+      background: @color-black;
+      color: @color-white;
+      border-color: @color-black;
+
+      &:hover {
+        background: lighten(@color-black, 10%);
+      }
+    }
+  }
+}
+
+.site-footer {
+  background: @color-black;
+  color: fade(@color-white, 75%);
+  padding-top: 64px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid fade(@color-white, 10%);
+  }
+
+  &__brand {
+    p {
+      font-size: 13px;
+      color: fade(@color-white, 55%);
+      margin: 16px 0 0;
+    }
+    a {
+      text-decoration: none;
+      color: fade(@color-white, 70%);
+
+      &:hover {
+        color: @color-white;
+      }
+    }
+  }
+
+  &__col {
+    h3 {
+      font-family: @font-body;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      color: @color-white;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid @color-red;
+      display: inline-block;
+    }
+
+    ul li {
+      font-size: 13px;
+      color: fade(@color-white, 60%);
+      padding: 6px 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 22px 24px;
+    font-size: 12px;
+    flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+      color: fade(@color-white, 60%);
+      letter-spacing: 0.06em;
+
+      &:hover {
+        color: @color-white;
+      }
+    }
+  }
+
+  @media (max-width: @bp-tablet) {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: @bp-mobile) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.about {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  padding: 88px 24px;
+  background: @color-cream;
+
+  &__text p:last-child {
+    margin-bottom: 0;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: @color-white;
+    border: 1px solid @color-line;
+  }
+
+  @media (max-width: @bp-tablet) {
+    grid-template-columns: 1fr;
+    padding: 64px 24px;
+  }
+}
+
+.stat {
+  padding: 30px 28px;
+  border-right: 1px solid @color-line;
+  border-bottom: 1px solid @color-line;
+
+  &:nth-child(2n) {
+    border-right: none;
+  }
+  &:nth-child(n+3) {
+    border-bottom: none;
+  }
+
+  &__value {
+    font-family: @font-display;
+    font-size: 26px;
+    color: @color-red;
+    margin: 0 0 6px;
+  }
+
+  &__label {
+    margin: 0;
+    font-size: 13px;
+    color: @color-muted;
+  }
+}
+
+.hours {
+  background: @color-white;
+  border-bottom: 1px solid @color-line;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 26px 24px;
+    border-right: 1px solid @color-line;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__icon {
+    color: @color-red;
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-family: @font-body;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+
+  &__schedule {
+    font-size: 13px;
+    color: @color-muted;
+  }
+
+  @media (max-width: @bp-tablet) {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item:nth-child(2) {
+      border-right: none;
+    }
+    &__item:nth-child(3) {
+      border-top: 1px solid @color-line;
+    }
+    &__item:nth-child(4) {
+      border-top: 1px solid @color-line;
+      border-right: none;
+    }
+  }
+
+  @media (max-width: @bp-mobile) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+    &__item {
+      border-right: none;
+      border-top: 1px solid @color-line;
+    }
+    &__item:first-child {
+      border-top: none;
+    }
+  }
+}
