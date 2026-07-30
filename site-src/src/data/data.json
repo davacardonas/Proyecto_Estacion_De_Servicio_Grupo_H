@@ -1,9 +1,9 @@
 {
   "site": {
-    "title": "Texaco Centro de Servicio · Tegucigalpa",
+    "title": "Texaco Centro de Servicio · Teupasenti",
     "brand": {
       "name": "TEXACO",
-      "tagline": "CENTRO DE SERVICIO · TEGUCIGALPA"
+      "tagline": "CENTRO DE SERVICIO · TEUPASENTI"
     }
   },
   "nav": [
@@ -16,12 +16,12 @@
     { "label": "CONTACTO", "href": "#contacto" }
   ],
   "hero": {
-    "eyebrow": "TEGUCIGALPA, HONDURAS · CARRETERA AL NORTE",
+    "eyebrow": "TEUPASENTI, EL PARAÍSO · HONDURAS",
     "headingLine1": "UN SOLO",
     "headingHighlight": "ALTO.",
     "headingLine2": "TODO LO QUE",
     "headingLine3": "NECESITÁS.",
-    "paragraph": "Gasolinera, farmacia, supermercado y restaurante bajo un mismo techo. Abiertos todos los días en la vía principal de Tegucigalpa.",
+    "paragraph": "Gasolinera, farmacia, supermercado y restaurante bajo un mismo techo. Abiertos todos los días en la vía principal de Teupasenti.",
     "ctaPrimary": { "label": "VER UBICACIÓN", "href": "#ubicacion" },
     "ctaSecondary": { "label": "CONTACTARNOS", "href": "#contacto" }
   },
@@ -31,19 +31,19 @@
   "ticker": [
     "MINI SUPERMERCADO",
     "RESTAURANTE TÍPICO",
-    "CARRETERA AL NORTE · TEGUCIGALPA",
+    "VÍA PRINCIPAL · TEUPASENTI",
     "GASOLINERA 24 HORAS",
     "FARMACIA"
   ],
   "about": {
     "heading": "CENTRO DE SERVICIO COMPLETO",
     "paragraphs": [
-      "Somos el punto de parada más completo de la Carretera al Norte. Desde que abrimos nuestras puertas en 1998, hemos atendido a miles de familias hondureñas y conductores que buscan comodidad, confianza y buenos precios en un solo lugar.",
+      "Somos el punto de parada más completo de Teupasenti. Desde que abrimos nuestras puertas en 1998, hemos atendido a miles de familias hondureñas y conductores que buscan comodidad, confianza y buenos precios en un solo lugar.",
       "Ya sea que necesités repostar, comprar una medicina, hacer el mercado o disfrutar un desayuno típico antes de seguir viaje — aquí encontrás todo."
     ],
     "stats": [
       { "value": "24/7", "label": "Gasolinera siempre disponible" },
-      { "value": "+25 AÑOS", "label": "Sirviendo a Tegucigalpa" },
+      { "value": "+25 AÑOS", "label": "Sirviendo a Teupasenti" },
       { "value": "4 SERVICIOS", "label": "Todo bajo un mismo techo" },
       { "value": "100% TEXACO", "label": "Combustible certificado" }
     ]
@@ -92,11 +92,11 @@
     ]
   },
   "testimonial": {
-    "quote": "Paro aquí cada vez que bajo a Tegucigalpa. El desayuno del restaurante es de los mejores de la carretera, y sé que el combustible siempre es de calidad Texaco.",
+    "quote": "Paro aquí cada vez que paso por Teupasenti. El desayuno del restaurante es de los mejores de la carretera, y sé que el combustible siempre es de calidad Texaco.",
     "authorInitial": "M",
     "authorName": "MARÍA JOSÉ RODRÍGUEZ",
-    "authorRole": "Conductora de ruta · Siguatepeque–Tegucigalpa",
-    "image": "img-tegucigalpa",
+    "authorRole": "Conductora de ruta · El Paraíso–Teupasenti",
+    "image": "img-teupasenti",
     "badge": "MÁS DE 25 AÑOS SIRVIENDO HONDURAS"
   },
   "promo": {
@@ -110,21 +110,22 @@
     "heading": "CÓMO LLEGAR",
     "eyebrow": "DIRECCIÓN",
     "addressLines": [
-      "CARRETERA AL NORTE",
-      "COL. LAS UVAS, TEGUCIGALPA",
-      "FRANCISCO MORAZÁN, HONDURAS"
+      "TEUPASENTI",
+      "EL PARAÍSO",
+      "HONDURAS, C.A."
     ],
-    "reference": "Frente al semáforo de Col. Las Uvas",
+    "reference": "Teupasenti, El Paraíso, Honduras",
     "phone": "(504) 2200-1234",
-    "email": "info@texacotegucigalpa.hn",
-    "cta": { "label": "CÓMO LLEGAR", "href": "#" },
-    "mapsLabel": "Abrir en Maps"
+    "email": "info@texacoteupasenti.hn",
+    "cta": { "label": "CÓMO LLEGAR", "href": "https://www.google.com/maps/search/?api=1&query=14.22584,-86.71397" },
+    "mapsLabel": "Abrir en Maps",
+    "mapEmbedUrl": "https://www.google.com/maps?q=14.22584,-86.71397&z=15&output=embed"
   },
   "contact": {
     "heading": "ESCRIBINOS",
     "paragraph": "¿Tenés preguntas, sugerencias o querés información sobre nuestros servicios? Completá el formulario y te respondemos pronto.",
     "phone": "(504) 2200-1234",
-    "email": "info@texacotegucigalpa.hn",
+    "email": "info@texacoteupasenti.hn",
     "officeHoursLabel": "HORARIO DE OFICINA",
     "officeHours": "Lun–Vie 8am–5pm",
     "form": {
@@ -143,12 +144,12 @@
   },
   "footer": {
     "address": [
-      "Carretera al Norte, frente a Col. Las Uvas",
-      "Tegucigalpa, Francisco Morazán",
+      "Teupasenti",
+      "El Paraíso",
       "Honduras, C.A."
     ],
     "phone": "(504) 2200-1234",
-    "email": "info@texacotegucigalpa.hn",
+    "email": "info@texacoteupasenti.hn",
     "columns": [
       {
         "heading": "GASOLINERA",
@@ -167,7 +168,7 @@
         "links": ["Desayunos Típicos", "Platos del Día", "Café y Bebidas", "Antojitos y Bocas", "Lun–Dom 6am–9pm"]
       }
     ],
-    "copyright": "© 2025 Texaco Centro de Servicio · Tegucigalpa, Honduras. Todos los derechos reservados.",
+    "copyright": "© 2025 Texaco Centro de Servicio · Teupasenti, El Paraíso, Honduras. Todos los derechos reservados.",
     "privacyLabel": "POLÍTICA DE PRIVACIDAD"
   }
 }
