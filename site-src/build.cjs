@@ -35,13 +35,21 @@ fs.readdirSync(partialsDir).forEach((file) => {
 });
 
 // ---------- Compile HTML ----------
+// Cada entrada = una página del sitio. Para agregar más páginas,
+// solo se suma { template, output } aquí.
+const PAGES = [
+  { template: 'layout.hbs', output: 'index.html' },
+  { template: 'ubicacion.hbs', output: 'ubicacion.html' }
+];
+
 function buildHtml() {
-  const layoutSrc = fs.readFileSync(path.join(SRC, 'templates', 'layout.hbs'), 'utf8');
-  const template = Handlebars.compile(layoutSrc);
   const data = JSON.parse(fs.readFileSync(path.join(SRC, 'data', 'data.json'), 'utf8'));
-  const html = template(data);
-  fs.writeFileSync(path.join(PROJECT_ROOT, 'index.html'), html);
-  console.log('✔ index.html generado en la raíz del proyecto');
+  PAGES.forEach(({ template, output }) => {
+    const src = fs.readFileSync(path.join(SRC, 'templates', template), 'utf8');
+    const compiled = Handlebars.compile(src);
+    fs.writeFileSync(path.join(PROJECT_ROOT, output), compiled(data));
+    console.log(`✔ ${output} generado en la raíz del proyecto`);
+  });
 }
 
 // ---------- Compile LESS ----------

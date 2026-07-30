@@ -11,7 +11,7 @@
     { "label": "FARMACIA", "href": "#farmacia" },
     { "label": "SUPERMERCADO", "href": "#supermercado" },
     { "label": "RESTAURANTE", "href": "#restaurante" },
-    { "label": "UBICACIÓN", "href": "#ubicacion" },
+    { "label": "UBICACIÓN", "href": "ubicacion.html" },
     { "label": "NOSOTROS", "href": "#nosotros" },
     { "label": "CONTACTO", "href": "#contacto" }
   ],
