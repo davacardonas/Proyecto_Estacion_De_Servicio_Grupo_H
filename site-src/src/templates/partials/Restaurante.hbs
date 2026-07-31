@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante · {{site.title}}</title>
+    <meta name="description"
+        content="Comida típica hondureña, desayunos y café de altura en el restaurante del Texaco Centro de Servicio, Teupasenti, El Paraíso.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    {{> header nav=nav site=site}}
+
+    <main>
+        <section class="page-hero">
+            <span class="page-hero__eyebrow">{{restaurante.eyebrow}}</span>
+            <h1 class="page-hero__title">{{restaurante.title}}</h1>
+            <p class="page-hero__subtitle">{{restaurante.subtitle}}</p>
+        </section>
+
+        <section class="menu" id="restaurante-menu">
+            <div class="container">
+                <h2 class="section-heading"><span class="section-heading__bar"></span>{{restaurante.menuHeading}}</h2>
+
+                <div class="menu__groups">
+                    {{#each restaurante.menuGroups}}
+                    <div class="menu-group">
+                        <h3 class="menu-group__title">{{icon this.icon}}{{this.name}}</h3>
+                        <ul class="menu-group__list">
+                            {{#each this.items}}
+                            <li class="menu-item">
+                                <div class="menu-item__head">
+                                    <span class="menu-item__name">{{this.name}}</span>
+                                    <span class="menu-item__leader" aria-hidden="true"></span>
+                                    <span class="menu-item__price">{{this.price}}</span>
+                                </div>
+                                <p class="menu-item__desc">{{this.description}}</p>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+
+        <section class="promo restaurante-banner">
+            <div class="promo__inner">
+                <div>
+                    <span class="promo__eyebrow">{{restaurante.special.heading}}</span>
+                    <p class="promo__desc">{{restaurante.special.paragraph}}</p>
+                </div>
+                <ul class="restaurante-banner__meta">
+                    <li>{{icon "clock"}}{{restaurante.special.schedule}}</li>
+                    <li>{{icon "pin"}}{{restaurante.special.reference}}</li>
+                    <li>{{icon "phone"}}{{restaurante.special.phone}}</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact container" id="restaurante-reserva">
+            <div class="contact__info">
+                <h2 class="section-heading"><span class="section-heading__bar"></span>{{restaurante.reservation.heading}}
+                </h2>
+                <p>{{restaurante.reservation.paragraph}}</p>
+            </div>
+
+            <form class="contact__form" method="post" action="#">
+                <div class="contact__form-row">
+                    <div class="field">
+                        <label for="reserva-nombre">{{restaurante.reservation.form.name.label}}<span
+                                aria-hidden="true">*</span></label>
+                        <input type="text" id="reserva-nombre" name="nombre"
+                            placeholder="{{restaurante.reservation.form.name.placeholder}}" required>
+                    </div>
+                    <div class="field">
+                        <label for="reserva-telefono">{{restaurante.reservation.form.phone.label}}<span
+                                aria-hidden="true">*</span></label>
+                        <input type="tel" id="reserva-telefono" name="telefono"
+                            placeholder="{{restaurante.reservation.form.phone.placeholder}}" required>
+                    </div>
+                </div>
+                <div class="contact__form-row">
+                    <div class="field">
+                        <label for="reserva-fecha">{{restaurante.reservation.form.date.label}}<span
+                                aria-hidden="true">*</span></label>
+                        <input type="text" id="reserva-fecha" name="fecha"
+                            placeholder="{{restaurante.reservation.form.date.placeholder}}" required>
+                    </div>
+                    <div class="field">
+                        <label for="reserva-personas">{{restaurante.reservation.form.guests.label}}<span
+                                aria-hidden="true">*</span></label>
+                        <input type="text" id="reserva-personas" name="personas"
+                            placeholder="{{restaurante.reservation.form.guests.placeholder}}" required>
+                    </div>
+                </div>
+                <button class="btn btn--primary btn--block"
+                    type="submit">{{restaurante.reservation.form.submit}}</button>
+            </form>
+        </section>
+    </main>
+
+    {{> footer footer=footer}}
+
+    <button class="help-fab" type="button" aria-label="Ayuda">?</button>
+</body>
+
+</html>

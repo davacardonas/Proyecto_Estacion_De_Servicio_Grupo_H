@@ -18,7 +18,9 @@ const icons = {
   pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-6.6 7-11.5A7 7 0 0 0 5 9.5C5 14.4 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>',
   phone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h3.5l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2 4.5 1.5V19a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 4z"/></svg>',
   mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>',
-  clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>'
+  clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>',
+  coffee: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M7 4c0 1-1 1-1 2M11 4c0 1-1 1-1 2M15 4c0 1-1 1-1 2"/></svg>',
+  dessert: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 11h12l-1.2 8.4A2 2 0 0 1 14.8 21H9.2a2 2 0 0 1-2-1.6L6 11z"/><path d="M7 11a5 5 0 0 1 10 0"/><path d="M12 3v3M9 4.5l1 2M15 4.5l-1 2"/></svg>'
 };
 
 Handlebars.registerHelper('icon', function (name) {
@@ -35,18 +37,20 @@ fs.readdirSync(partialsDir).forEach((file) => {
 });
 
 // ---------- Compile HTML ----------
-// Cada entrada = una página del sitio. Para agregar más páginas,
-// solo se suma { template, output } aquí.
 const PAGES = [
   { template: 'layout.hbs', output: 'index.html' },
   { template: 'ubicacion.hbs', output: 'ubicacion.html' },
-  { template: 'Supermercado.hbs', output: 'Supermercado.html' }
+  { template: 'Supermercado.hbs', output: 'Supermercado.html' },
+  { template: 'Restaurante.hbs', output: 'Restaurante.html' }
 ];
 
 function buildHtml() {
   const data = JSON.parse(fs.readFileSync(path.join(SRC, 'data', 'data.json'), 'utf8'));
   PAGES.forEach(({ template, output }) => {
-    const src = fs.readFileSync(path.join(SRC, 'templates', template), 'utf8');
+    const rootPath = path.join(SRC, 'templates', template);
+    const partialPath = path.join(partialsDir, template);
+    const templatePath = fs.existsSync(rootPath) ? rootPath : partialPath;
+    const src = fs.readFileSync(templatePath, 'utf8');
     const compiled = Handlebars.compile(src);
     fs.writeFileSync(path.join(PROJECT_ROOT, output), compiled(data));
     console.log(`✔ ${output} generado en la raíz del proyecto`);
@@ -71,3 +75,4 @@ function buildCss() {
 if (!fs.existsSync(PUBLIC)) fs.mkdirSync(PUBLIC, { recursive: true });
 buildHtml();
 buildCss();
+
