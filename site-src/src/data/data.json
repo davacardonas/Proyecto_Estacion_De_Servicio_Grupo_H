@@ -7,13 +7,34 @@
     }
   },
   "nav": [
-    { "label": "GASOLINERA", "href": "#gasolinera" },
-    { "label": "FARMACIA", "href": "#farmacia" },
-    { "label": "SUPERMERCADO", "href": "#supermercado" },
-    { "label": "RESTAURANTE", "href": "#restaurante" },
-    { "label": "UBICACIÓN", "href": "ubicacion.html" },
-    { "label": "NOSOTROS", "href": "#nosotros" },
-    { "label": "CONTACTO", "href": "#contacto" }
+    {
+      "label": "GASOLINERA",
+      "href": "#gasolinera"
+    },
+    {
+      "label": "FARMACIA",
+      "href": "#farmacia"
+    },
+    {
+      "label": "SUPERMERCADO", 
+      "href": "Supermercado.html" 
+    },
+    {
+      "label": "RESTAURANTE",
+      "href": "#restaurante"
+    },
+    {
+      "label": "UBICACIÓN",
+      "href": "ubicacion.html"
+    },
+    {
+      "label": "NOSOTROS",
+      "href": "#nosotros"
+    },
+    {
+      "label": "CONTACTO",
+      "href": "#contacto"
+    }
   ],
   "hero": {
     "eyebrow": "TEUPASENTI, EL PARAÍSO · HONDURAS",
@@ -22,8 +43,14 @@
     "headingLine2": "TODO LO QUE",
     "headingLine3": "NECESITÁS.",
     "paragraph": "Gasolinera, farmacia, supermercado y restaurante bajo un mismo techo. Abiertos todos los días en la vía principal de Teupasenti.",
-    "ctaPrimary": { "label": "VER UBICACIÓN", "href": "#ubicacion" },
-    "ctaSecondary": { "label": "CONTACTARNOS", "href": "#contacto" }
+    "ctaPrimary": {
+      "label": "VER UBICACIÓN",
+      "href": "#ubicacion"
+    },
+    "ctaSecondary": {
+      "label": "CONTACTARNOS",
+      "href": "#contacto"
+    }
   },
   "statusBar": {
     "text": "Gasolinera abierta 24 horas · 7 días a la semana"
@@ -42,17 +69,45 @@
       "Ya sea que necesités repostar, comprar una medicina, hacer el mercado o disfrutar un desayuno típico antes de seguir viaje — aquí encontrás todo."
     ],
     "stats": [
-      { "value": "24/7", "label": "Gasolinera siempre disponible" },
-      { "value": "+25 AÑOS", "label": "Sirviendo a Teupasenti" },
-      { "value": "4 SERVICIOS", "label": "Todo bajo un mismo techo" },
-      { "value": "100% TEXACO", "label": "Combustible certificado" }
+      {
+        "value": "24/7",
+        "label": "Gasolinera siempre disponible"
+      },
+      {
+        "value": "+25 AÑOS",
+        "label": "Sirviendo a Teupasenti"
+      },
+      {
+        "value": "4 SERVICIOS",
+        "label": "Todo bajo un mismo techo"
+      },
+      {
+        "value": "100% TEXACO",
+        "label": "Combustible certificado"
+      }
     ]
   },
   "hours": [
-    { "icon": "pump", "name": "GASOLINERA", "schedule": "24 horas · 7 días" },
-    { "icon": "cross", "name": "FARMACIA", "schedule": "Lun–Dom · 7am–10pm" },
-    { "icon": "cart", "name": "SUPERMERCADO", "schedule": "Lun–Dom · 7am–9pm" },
-    { "icon": "fork", "name": "RESTAURANTE", "schedule": "Lun–Dom · 6am–9pm" }
+    {
+      "icon": "pump",
+      "name": "GASOLINERA",
+      "schedule": "24 horas · 7 días"
+    },
+    {
+      "icon": "cross",
+      "name": "FARMACIA",
+      "schedule": "Lun–Dom · 7am–10pm"
+    },
+    {
+      "icon": "cart",
+      "name": "SUPERMERCADO",
+      "schedule": "Lun–Dom · 7am–9pm"
+    },
+    {
+      "icon": "fork",
+      "name": "RESTAURANTE",
+      "schedule": "Lun–Dom · 6am–9pm"
+    }
   ],
   "services": {
     "heading": "NUESTROS SERVICIOS",
@@ -104,7 +159,10 @@
     "heading": "5% DESCUENTO",
     "headingLine2": "EN COMBUSTIBLE",
     "description": "Con compra mínima de L. 200 en el supermercado o restaurante. Válido de lunes a viernes, sujeto a disponibilidad.",
-    "cta": { "label": "VER CONDICIONES", "href": "#" }
+    "cta": {
+      "label": "VER CONDICIONES",
+      "href": "#"
+    }
   },
   "location": {
     "heading": "CÓMO LLEGAR",
@@ -117,9 +175,66 @@
     "reference": "Teupasenti, El Paraíso, Honduras",
     "phone": "(504) 2200-1234",
     "email": "info@texacoteupasenti.hn",
-    "cta": { "label": "CÓMO LLEGAR", "href": "https://www.google.com/maps/search/?api=1&query=14.22584,-86.71397" },
+    "cta": {
+      "label": "CÓMO LLEGAR",
+      "href": "https://www.google.com/maps/search/?api=1&query=14.22584,-86.71397"
+    },
     "mapsLabel": "Abrir en Maps",
     "mapEmbedUrl": "https://www.google.com/maps?q=14.22584,-86.71397&z=15&output=embed"
+  },
+  "supermercado": {
+    "eyebrow": "MINI SUPERMERCADO",
+    "title": "TODO PARA TU DESPENSA",
+    "subtitle": "Abarrotes, frutas, verduras, carnes y bebidas frescas, listos para llevar en tu parada en Teupasenti.",
+    "categoriesHeading": "NUESTRAS CATEGORÍAS",
+    "categories": [
+      {
+        "icon": "cart",
+        "name": "ABARROTES Y LÁCTEOS",
+        "description": "Arroz, frijoles, azúcar, aceite, leche, quesos y productos básicos de la canasta familiar."
+      },
+      {
+        "icon": "tag",
+        "name": "FRUTAS Y VERDURAS",
+        "description": "Producto fresco de temporada, seleccionado a diario para garantizar buena calidad."
+      },
+      {
+        "icon": "fork",
+        "name": "CARNES Y EMBUTIDOS",
+        "description": "Carne de res, pollo y embutidos refrigerados, con atención personalizada en el mostrador."
+      },
+      {
+        "icon": "star",
+        "name": "BEBIDAS Y SNACKS",
+        "description": "Gaseosas, jugos, agua embotellada y snacks para el camino, siempre bien fríos."
+      }
+    ],
+    "hours": {
+      "heading": "HORARIO DEL SUPERMERCADO",
+      "paragraph": "Abierto todos los días para que encuentres lo que necesitás antes o después de tu viaje.",
+      "schedule": "Lun–Dom · 7am–9pm",
+      "reference": "Vía principal, Teupasenti, El Paraíso",
+      "phone": "(504) 2200-1234"
+    },
+    "order": {
+      "heading": "HACÉ TU PEDIDO",
+      "paragraph": "¿Vas de paso y querés recoger tu compra lista? Enviános tu lista y te la dejamos apartada.",
+      "form": {
+        "name": {
+          "label": "NOMBRE",
+          "placeholder": "Tu nombre completo"
+        },
+        "phone": {
+          "label": "TELÉFONO",
+          "placeholder": "Tu número de contacto"
+        },
+        "list": {
+          "label": "LISTA DE PRODUCTOS",
+          "placeholder": "Detallá los productos que necesitás"
+        },
+        "submit": "ENVIAR PEDIDO"
+      }
+    }
   },
   "contact": {
     "heading": "ESCRIBINOS",
@@ -129,9 +244,18 @@
     "officeHoursLabel": "HORARIO DE OFICINA",
     "officeHours": "Lun–Vie 8am–5pm",
     "form": {
-      "name": { "label": "NOMBRE", "placeholder": "Tu nombre completo" },
-      "email": { "label": "CORREO", "placeholder": "tucorreo@ejemplo.com" },
-      "message": { "label": "MENSAJE", "placeholder": "¿En qué podemos ayudarte?" },
+      "name": {
+        "label": "NOMBRE",
+        "placeholder": "Tu nombre completo"
+      },
+      "email": {
+        "label": "CORREO",
+        "placeholder": "tucorreo@ejemplo.com"
+      },
+      "message": {
+        "label": "MENSAJE",
+        "placeholder": "¿En qué podemos ayudarte?"
+      },
       "submit": "ENVIAR MENSAJE"
     }
   },
@@ -153,19 +277,43 @@
     "columns": [
       {
         "heading": "GASOLINERA",
-        "links": ["Gasolina Regular", "Gasolina Superior", "Diésel", "Aceites y Lubricantes", "24 horas · 7 días"]
+        "links": [
+          "Gasolina Regular",
+          "Gasolina Superior",
+          "Diésel",
+          "Aceites y Lubricantes",
+          "24 horas · 7 días"
+        ]
       },
       {
         "heading": "FARMACIA",
-        "links": ["Medicamentos Genéricos", "Vitaminas y Suplementos", "Cuidado Personal", "Productos de Bebé", "Lun–Dom 7am–10pm"]
+        "links": [
+          "Medicamentos Genéricos",
+          "Vitaminas y Suplementos",
+          "Cuidado Personal",
+          "Productos de Bebé",
+          "Lun–Dom 7am–10pm"
+        ]
       },
       {
         "heading": "SUPERMERCADO",
-        "links": ["Abarrotes y Lácteos", "Frutas y Verduras", "Carnes y Embutidos", "Bebidas y Snacks", "Lun–Dom 7am–9pm"]
+        "links": [
+          "Abarrotes y Lácteos",
+          "Frutas y Verduras",
+          "Carnes y Embutidos",
+          "Bebidas y Snacks",
+          "Lun–Dom 7am–9pm"
+        ]
       },
       {
         "heading": "RESTAURANTE",
-        "links": ["Desayunos Típicos", "Platos del Día", "Café y Bebidas", "Antojitos y Bocas", "Lun–Dom 6am–9pm"]
+        "links": [
+          "Desayunos Típicos",
+          "Platos del Día",
+          "Café y Bebidas",
+          "Antojitos y Bocas",
+          "Lun–Dom 6am–9pm"
+        ]
       }
     ],
     "copyright": "© 2025 Texaco Centro de Servicio · Teupasenti, El Paraíso, Honduras. Todos los derechos reservados.",

@@ -39,7 +39,8 @@ fs.readdirSync(partialsDir).forEach((file) => {
 // solo se suma { template, output } aquí.
 const PAGES = [
   { template: 'layout.hbs', output: 'index.html' },
-  { template: 'ubicacion.hbs', output: 'ubicacion.html' }
+  { template: 'ubicacion.hbs', output: 'ubicacion.html' },
+  { template: 'Supermercado.hbs', output: 'Supermercado.html' }
 ];
 
 function buildHtml() {

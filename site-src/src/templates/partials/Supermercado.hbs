@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado · {{site.title}}</title>
+    <meta name="description"
+        content="Abarrotes, frutas, verduras, carnes y bebidas frescas en el supermercado del Texaco Centro de Servicio, Teupasenti, El Paraíso.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    {{> header nav=nav site=site}}
+
+    <main>
+        <section class="page-hero">
+            <span class="page-hero__eyebrow">{{supermercado.eyebrow}}</span>
+            <h1 class="page-hero__title">{{supermercado.title}}</h1>
+            <p class="page-hero__subtitle">{{supermercado.subtitle}}</p>
+        </section>
+
+        <section class="hours" id="supermercado-categorias">
+            <div class="container">
+                <h2 class="section-heading"><span class="section-heading__bar"></span>{{supermercado.categoriesHeading}}
+                </h2>
+            </div>
+            <div class="container hours__grid">
+                {{#each supermercado.categories}}
+                <div class="hours__item">
+                    <span class="hours__icon">{{icon this.icon}}</span>
+                    <span class="hours__text">
+                        <span class="hours__name">{{this.name}}</span>
+                        <span class="hours__schedule">{{this.description}}</span>
+                    </span>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <section class="promo supermercado-banner">
+            <div class="promo__inner">
+                <div>
+                    <span class="promo__eyebrow">{{supermercado.hours.heading}}</span>
+                    <p class="promo__desc">{{supermercado.hours.paragraph}}</p>
+                </div>
+                <ul class="supermercado-banner__meta">
+                    <li>{{icon "clock"}}{{supermercado.hours.schedule}}</li>
+                    <li>{{icon "pin"}}{{supermercado.hours.reference}}</li>
+                    <li>{{icon "phone"}}{{supermercado.hours.phone}}</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact container" id="supermercado-pedido">
+            <div class="contact__info">
+                <h2 class="section-heading"><span class="section-heading__bar"></span>{{supermercado.order.heading}}
+                </h2>
+                <p>{{supermercado.order.paragraph}}</p>
+            </div>
+
+            <form class="contact__form" method="post" action="#">
+                <div class="contact__form-row">
+                    <div class="field">
+                        <label for="pedido-nombre">{{supermercado.order.form.name.label}}<span
+                                aria-hidden="true">*</span></label>
+                        <input type="text" id="pedido-nombre" name="nombre"
+                            placeholder="{{supermercado.order.form.name.placeholder}}" required>
+                    </div>
+                    <div class="field">
+                        <label for="pedido-telefono">{{supermercado.order.form.phone.label}}<span
+                                aria-hidden="true">*</span></label>
+                        <input type="tel" id="pedido-telefono" name="telefono"
+                            placeholder="{{supermercado.order.form.phone.placeholder}}" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="pedido-lista">{{supermercado.order.form.list.label}}<span
+                            aria-hidden="true">*</span></label>
+                    <textarea id="pedido-lista" name="lista" rows="5"
+                        placeholder="{{supermercado.order.form.list.placeholder}}" required></textarea>
+                </div>
+                <button class="btn btn--primary btn--block" type="submit">{{supermercado.order.form.submit}}</button>
+            </form>
+        </section>
+    </main>
+
+    {{> footer footer=footer}}
+
+    <button class="help-fab" type="button" aria-label="Ayuda">?</button>
+</body>
+
+</html>
