@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia · {{site.title}}</title>
+    <meta name="description"
+        content="Medicamentos, vitaminas y productos de cuidado personal en la farmacia del Texaco Centro de Servicio, Teupasenti, El Paraíso.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    {{> header nav=nav site=site}}
+
+    <main>
+        <section class="page-hero">
+            <span class="page-hero__eyebrow">{{farmacia.eyebrow}}</span>
+            <h1 class="page-hero__title">{{farmacia.title}}</h1>
+            <p class="page-hero__subtitle">{{farmacia.subtitle}}</p>
+        </section>
+
+        <section class="hours" id="farmacia-categorias">
+            <div class="container">
+                <h2 class="section-heading"><span class="section-heading__bar"></span>{{farmacia.categoriesHeading}}
+                </h2>
+            </div>
+            <div class="container hours__grid">
+                {{#each farmacia.categories}}
+                <div class="hours__item">
+                    <span class="hours__icon">{{icon this.icon}}</span>
+                    <span class="hours__text">
+                        <span class="hours__name">{{this.name}}</span>
+                        <span class="hours__schedule">{{this.description}}</span>
+                    </span>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <section class="promo farmacia-banner">
+            <div class="promo__inner">
+                <div>
+                    <span class="promo__eyebrow">{{farmacia.hours.heading}}</span>
+                    <p class="promo__desc">{{farmacia.hours.paragraph}}</p>
+                </div>
+                <ul class="farmacia-banner__meta">
+                    <li>{{icon "clock"}}{{farmacia.hours.schedule}}</li>
+                    <li>{{icon "pin"}}{{farmacia.hours.reference}}</li>
+                    <li>{{icon "phone"}}{{farmacia.hours.phone}}</li>
+                    <li>{{icon "cart"}}{{farmacia.hours.delivery}}</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="hours" id="farmacia-confianza">
+            <div class="container">
+                <h2 class="section-heading"><span class="section-heading__bar"></span>{{farmacia.trust.heading}}
+                </h2>
+            </div>
+            <div class="container hours__grid">
+                {{#each farmacia.trust.items}}
+                <div class="hours__item">
+                    <span class="hours__icon">{{icon this.icon}}</span>
+                    <span class="hours__text">
+                        <span class="hours__name">{{this.name}}</span>
+                        <span class="hours__schedule">{{this.schedule}}</span>
+                    </span>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <section class="farmacia-products" id="farmacia-promociones">
+            <div class="container">
+                <h2 class="section-heading"><span class="section-heading__bar"></span>{{farmacia.products.heading}}
+                </h2>
+
+                <div class="farmacia-products__grid">
+                    {{#each farmacia.products.items}}
+                    <article class="product-card">
+                        <div class="product-card__media">
+                            <span class="product-card__badge">{{this.badge}}</span>
+                            <div class="product-card__actions">
+                                <button class="product-card__cart" type="button" aria-label="Agregar al carrito">{{icon "cart"}}</button>
+                                <button class="product-card__help" type="button" aria-label="Más información">?</button>
+                            </div>
+                            <img class="product-card__img" src="{{this.image}}" alt="{{this.name}}" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <p class="product-card__name">{{this.name}}</p>
+                            <p class="product-card__brand">{{this.brand}}</p>
+                            <p class="product-card__note">{{this.note}}</p>
+                        </div>
+                    </article>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {{> footer footer=footer}}
+
+    <button class="help-fab" type="button" aria-label="Ayuda">?</button>
+</body>
+
+</html>

@@ -13,7 +13,7 @@
     },
     {
       "label": "FARMACIA",
-      "href": "#farmacia"
+      "href": "Farmacia.html"
     },
     {
       "label": "SUPERMERCADO", 
@@ -234,6 +234,100 @@
         },
         "submit": "ENVIAR PEDIDO"
       }
+    }
+  },
+  "farmacia": {
+    "eyebrow": "FARMACIA",
+    "title": "SALUD Y BIENESTAR PARA TODA LA FAMILIA",
+    "subtitle": "Medicamentos, vitaminas y productos de cuidado personal con atención farmacéutica de confianza en tu parada en Teupasenti.",
+    "categoriesHeading": "NUESTRAS CATEGORÍAS",
+    "categories": [
+      {
+        "icon": "cross",
+        "name": "MEDICAMENTOS GENÉRICOS",
+        "description": "Amplio surtido de medicamentos genéricos y de marca, con y sin receta médica."
+      },
+      {
+        "icon": "star",
+        "name": "VITAMINAS Y SUPLEMENTOS",
+        "description": "Multivitamínicos, minerales y suplementos para fortalecer tu salud día a día."
+      },
+      {
+        "icon": "tag",
+        "name": "CUIDADO PERSONAL",
+        "description": "Higiene, dermocosmética y productos de cuidado personal para toda la familia."
+      },
+      {
+        "icon": "cart",
+        "name": "PRODUCTOS DE BEBÉ",
+        "description": "Pañales, fórmulas y artículos esenciales para el cuidado de los más pequeños."
+      }
+    ],
+    "hours": {
+      "heading": "HORARIO DE LA FARMACIA",
+      "paragraph": "Atención farmacéutica todos los días, antes, durante o después de tu viaje.",
+      "schedule": "Lun–Dom · 7am–10pm",
+      "reference": "Vía principal, Teupasenti, El Paraíso",
+      "phone": "(504) 2200-1234",
+      "delivery": "Servicio a domicilio disponible"
+    },
+    "trust": {
+      "heading": "POR QUÉ ELEGIRNOS",
+      "items": [
+        {
+          "icon": "cross",
+          "name": "ATENCIÓN FARMACÉUTICA",
+          "schedule": "Orientación profesional en cada compra"
+        },
+        {
+          "icon": "star",
+          "name": "PRECIOS JUSTOS",
+          "schedule": "Promociones y descuentos cada mes"
+        },
+        {
+          "icon": "clock",
+          "name": "HORARIO EXTENDIDO",
+          "schedule": "Abierto todos los días hasta las 10pm"
+        },
+        {
+          "icon": "pin",
+          "name": "FÁCIL DE ENCONTRAR",
+          "schedule": "Sobre la vía principal de Teupasenti"
+        }
+      ]
+    },
+    "products": {
+      "heading": "PROMOCIONES DEL MES",
+      "items": [
+        {
+          "badge": "-15%",
+          "image": "https://plus.unsplash.com/premium_photo-1668487826871-2f2cac23ad56?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "name": "Acetaminofén 500mg, 24 tabletas",
+          "brand": "Genérico",
+          "note": "Precio incluye descuento"
+        },
+        {
+          "badge": "-10%",
+          "image": "https://images.unsplash.com/photo-1625055929490-1ced51017e72?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "name": "Complejo B, 30 cápsulas",
+          "brand": "Vitalab",
+          "note": "Precio incluye descuento"
+        },
+        {
+          "badge": "-20%",
+          "image": "https://images.unsplash.com/photo-1646736722278-2eed3d2c2159?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "name": "Loratadina 10mg, 10 tabletas",
+          "brand": "Genérico",
+          "note": "Precio incluye descuento"
+        },
+        {
+          "badge": "-12%",
+          "image": "https://images.unsplash.com/photo-1550572017-26b5655c1e8c?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "name": "Alcohol Gel Antibacterial 250ml",
+          "brand": "CuidaMás",
+          "note": "Precio incluye descuento"
+        }
+      ]
     }
   },
   "contact": {

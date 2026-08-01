@@ -41,7 +41,8 @@ const PAGES = [
   { template: 'layout.hbs', output: 'index.html' },
   { template: 'ubicacion.hbs', output: 'ubicacion.html' },
   { template: 'Supermercado.hbs', output: 'Supermercado.html' },
-  { template: 'Restaurante.hbs', output: 'Restaurante.html' }
+  { template: 'Restaurante.hbs', output: 'Restaurante.html' },
+  { template: 'Farmacia.hbs', output: 'Farmacia.html' }
 ];
 
 function buildHtml() {
