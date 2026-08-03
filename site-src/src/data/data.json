@@ -330,6 +330,112 @@
       ]
     }
   },
+"restaurante": {
+  "eyebrow": "RESTAURANTE",
+  "title": "COMIDA TÍPICA HONDUREÑA",
+  "subtitle": "Disfrutá de desayunos, almuerzos y cenas preparados al momento con ingredientes frescos y el auténtico sabor catracho.",
+  "menuHeading": "NUESTRO MENÚ",
+
+  "menuGroups": [
+    {
+      "icon": "fork",
+      "name": "DESAYUNOS",
+      "items": [
+        {
+          "name": "Desayuno Típico",
+          "price": "L. 145",
+          "description": "Huevos, frijoles, queso, plátano maduro, mantequilla y tortillas."
+        },
+        {
+          "name": "Baleada Especial",
+          "price": "L. 70",
+          "description": "Con huevo, aguacate, carne y queso rallado."
+        },
+        {
+          "name": "Omelette",
+          "price": "L. 120",
+          "description": "Jamón, queso y vegetales frescos."
+        }
+      ]
+    },
+    {
+      "icon": "fork",
+      "name": "ALMUERZOS",
+      "items": [
+        {
+          "name": "Pollo Frito",
+          "price": "L. 185",
+          "description": "Acompañado de arroz, ensalada y tajadas."
+        },
+        {
+          "name": "Carne Asada",
+          "price": "L. 210",
+          "description": "Con chimol, frijoles y tortillas recién hechas."
+        },
+        {
+          "name": "Chuleta de Cerdo",
+          "price": "L. 195",
+          "description": "Con arroz, ensalada y tajadas."
+        }
+      ]
+    },
+    {
+      "icon": "fork",
+      "name": "BEBIDAS",
+      "items": [
+        {
+          "name": "Café de Altura",
+          "price": "L. 35",
+          "description": "Café hondureño recién preparado."
+        },
+        {
+          "name": "Jugo Natural",
+          "price": "L. 45",
+          "description": "Naranja, piña o sandía."
+        },
+        {
+          "name": "Refresco",
+          "price": "L. 30",
+          "description": "Variedad de sabores."
+        }
+      ]
+    }
+  ],
+
+  "special": {
+    "heading": "HORARIO DEL RESTAURANTE",
+    "paragraph": "Te esperamos todos los días con desayunos desde muy temprano y almuerzos preparados al momento.",
+    "schedule": "Lun–Dom · 6am–9pm",
+    "reference": "Vía principal, Teupasenti, El Paraíso",
+    "phone": "(504) 2200-1234"
+  },
+
+  "reservation": {
+    "heading": "RESERVÁ TU MESA",
+    "paragraph": "Si viajas en grupo o deseas asegurar tu mesa, completa el formulario y nos comunicaremos contigo.",
+
+    "form": {
+      "name": {
+        "label": "NOMBRE",
+        "placeholder": "Tu nombre completo"
+      },
+      "phone": {
+        "label": "TELÉFONO",
+        "placeholder": "Tu número de contacto"
+      },
+      "date": {
+        "label": "FECHA",
+        "placeholder": "DD/MM/AAAA"
+      },
+      "guests": {
+        "label": "PERSONAS",
+        "placeholder": "Cantidad de personas"
+      },
+      "submit": "RESERVAR MESA"
+    }
+  }
+},
+
   "contact": {
     "heading": "ESCRIBINOS",
     "paragraph": "¿Tenés preguntas, sugerencias o querés información sobre nuestros servicios? Completá el formulario y te respondemos pronto.",
