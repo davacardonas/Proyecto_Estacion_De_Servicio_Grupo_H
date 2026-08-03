@@ -7,34 +7,34 @@
     }
   },
   "nav": [
-    {
-      "label": "GASOLINERA",
-      "href": "#gasolinera"
-    },
-    {
-      "label": "FARMACIA",
-      "href": "Farmacia.html"
-    },
-    {
-      "label": "SUPERMERCADO", 
-      "href": "Supermercado.html" 
-    },
-    {
-      "label": "RESTAURANTE",
-      "href": "Restaurante.html"
-    },
-    {
-      "label": "UBICACIÓN",
-      "href": "ubicacion.html"
-    },
-    {
-      "label": "NOSOTROS",
-      "href": "#nosotros"
-    },
-    {
-      "label": "CONTACTO",
-      "href": "#contacto"
-    }
+   {
+    "label": "GASOLINERA",
+    "href": "index.html"
+  },
+  {
+    "label": "FARMACIA",
+    "href": "Farmacia.html"
+  },
+  {
+    "label": "SUPERMERCADO",
+    "href": "Supermercado.html"
+  },
+  {
+    "label": "RESTAURANTE",
+    "href": "Restaurante.html"
+  },
+  {
+    "label": "UBICACIÓN",
+    "href": "ubicacion.html"
+  },
+  {
+    "label": "NOSOTROS",
+    "href": "Nosotros.html"
+  },
+  {
+    "label": "CONTACTO",
+    "href": "index.html#contacto"
+  }
   ],
   "hero": {
     "eyebrow": "TEUPASENTI, EL PARAÍSO · HONDURAS",
@@ -434,6 +434,73 @@
       "submit": "RESERVAR MESA"
     }
   }
+},
+"nosotros":{
+
+    "eyebrow":"NOSOTROS",
+
+    "title":"MÁS DE 25 AÑOS SIRVIENDO A TEUPASENTI",
+
+    "subtitle":"Somos un centro de servicio comprometido con brindar calidad, confianza y atención personalizada a cada uno de nuestros clientes.",
+
+    "heading":"QUIÉNES SOMOS",
+
+    "paragraph1":"Desde 1998 Texaco Centro de Servicio Teupasenti ha sido un punto de referencia para viajeros y familias que buscan combustible de calidad, alimentos, medicamentos y productos de primera necesidad.",
+
+    "paragraph2":"Nuestro compromiso es ofrecer una atención cálida, instalaciones modernas y servicios confiables que hagan de cada visita una excelente experiencia.",
+
+    "stats":[
+
+        {
+
+            "value":"25+",
+
+            "label":"Años de experiencia"
+
+        },
+
+        {
+
+            "value":"24/7",
+
+            "label":"Gasolinera abierta"
+
+        },
+
+        {
+
+            "value":"4",
+
+            "label":"Servicios principales"
+
+        },
+
+        {
+
+            "value":"100%",
+
+            "label":"Calidad Texaco"
+
+        }
+
+    ],
+
+    "mission":{
+
+        "title":"MISIÓN",
+
+        "text":"Brindar productos y servicios de alta calidad que satisfagan las necesidades de nuestros clientes, ofreciendo atención amable y confianza en cada visita."
+
+    },
+
+    "vision":{
+
+        "title":"VISIÓN",
+
+        "text":"Ser el centro de servicio líder en la región, reconocido por nuestra excelencia, innovación y compromiso con la comunidad."
+
+    }
+
 },
 
   "contact": {

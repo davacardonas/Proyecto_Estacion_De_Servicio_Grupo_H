@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros · {{site.title}}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+{{> header nav=nav site=site}}
+
+<main>
+
+<section class="page-hero">
+    <span class="page-hero__eyebrow">{{nosotros.eyebrow}}</span>
+
+    <h1 class="page-hero__title">
+        {{nosotros.title}}
+    </h1>
+
+    <p class="page-hero__subtitle">
+        {{nosotros.subtitle}}
+    </p>
+</section>
+
+<section class="about-company container">
+
+    <div class="about-company__content">
+
+        <h2 class="section-heading">
+            <span class="section-heading__bar"></span>
+            {{nosotros.heading}}
+        </h2>
+
+        <p>{{nosotros.paragraph1}}</p>
+
+        <p>{{nosotros.paragraph2}}</p>
+
+    </div>
+
+    <div class="about-company__stats">
+
+        {{#each nosotros.stats}}
+
+        <article class="stat-card">
+
+            <h3>{{this.value}}</h3>
+
+            <p>{{this.label}}</p>
+
+        </article>
+
+        {{/each}}
+
+    </div>
+
+</section>
+
+<section class="mission container">
+
+    <div class="mission__card">
+
+        <h2>{{nosotros.mission.title}}</h2>
+
+        <p>{{nosotros.mission.text}}</p>
+
+    </div>
+
+    <div class="mission__card">
+
+        <h2>{{nosotros.vision.title}}</h2>
+
+        <p>{{nosotros.vision.text}}</p>
+
+    </div>
+
+</section>
+
+</main>
+
+{{> footer footer=footer}}
+
+<button class="help-fab" type="button">?</button>
+
+</body>
+</html>
