@@ -1,8 +1,11 @@
 .site-header {
+  position: relative;
+  z-index: 100;
   background: @color-near-black;
   border-bottom: 1px solid fade(@color-white, 8%);
 
   &__inner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,23 +66,68 @@
   }
 
   @media (max-width: @bp-tablet) {
-    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    max-height: 0;
+    overflow: hidden;
+    background: @color-near-black;
+    border-bottom: 1px solid fade(@color-white, 8%);
+    transition: max-height 260ms @ease;
+
+    &__list {
+      flex-direction: column;
+      gap: 0;
+      padding: 8px 0;
+
+      a {
+        display: block;
+        padding: 14px @gutter;
+      }
+
+      li + li a {
+        border-top: 1px solid fade(@color-white, 6%);
+      }
+    }
+
+    &--open {
+      max-height: 480px;
+    }
   }
 }
 
 .nav-toggle {
   display: none;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
   width: 26px;
+  height: 26px;
   background: none;
   border: none;
   cursor: pointer;
+  position: relative;
+  z-index: 5;
 
   span {
     height: 2px;
     background: @color-white;
     border-radius: 1px;
+    transition: transform 220ms @ease, opacity 220ms @ease;
+  }
+
+  &--open {
+    span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
   }
 
   @media (max-width: @bp-tablet) {

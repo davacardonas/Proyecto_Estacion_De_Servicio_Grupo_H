@@ -25,9 +25,9 @@
           </span>
         </a>
     
-        <nav class="main-nav" aria-label="Navegación principal">
+        <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
           <ul class="main-nav__list">
-            <li><a href="index.html">GASOLINERA</a></li>
+            <li><a href="#gasolinera">GASOLINERA</a></li>
             <li><a href="Farmacia.html">FARMACIA</a></li>
             <li><a href="Supermercado.html">SUPERMERCADO</a></li>
             <li><a href="Restaurante.html">RESTAURANTE</a></li>
@@ -37,7 +37,7 @@
           </ul>
         </nav>
     
-        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -280,6 +280,43 @@
     </footer>
 
     <button class="help-fab" type="button" aria-label="Ayuda">?</button>
+  <script>
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      var nav = document.getElementById('main-nav');
+      if (!toggle || !nav) return;
+  
+      function closeNav() {
+        nav.classList.remove('main-nav--open');
+        toggle.classList.remove('nav-toggle--open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+  
+      function openNav() {
+        nav.classList.add('main-nav--open');
+        toggle.classList.add('nav-toggle--open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+  
+      toggle.addEventListener('click', function () {
+        var isOpen = nav.classList.contains('main-nav--open');
+        if (isOpen) { closeNav(); } else { openNav(); }
+      });
+  
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeNav);
+      });
+  
+      document.addEventListener('click', function (event) {
+        var clickedInsideNav = nav.contains(event.target) || toggle.contains(event.target);
+        if (!clickedInsideNav) closeNav();
+      });
+  
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 960) closeNav();
+      });
+    })();
+  </script>
 </body>
 
 </html>
