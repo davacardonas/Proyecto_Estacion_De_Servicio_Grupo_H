@@ -272,82 +272,32 @@ svg {
 }
 .hero__media {
   position: absolute;
-  inset: 0;
-  background: radial-gradient(600px 400px at 80% 55%, rgba(58, 42, 26, 0.55), transparent 70%), linear-gradient(180deg, #0c0c0c 0%, #161616 55%, #0c0c0c 100%);
-}
-.hero__scene {
-  position: absolute;
-  right: 6%;
+  top: 0;
+  right: 0;
   bottom: 0;
-  width: 46%;
-  min-width: 360px;
-  height: 70%;
-  opacity: 0.9;
-}
-.hero__canopy {
-  position: absolute;
-  top: 14%;
   left: 0;
-  right: -6%;
-  height: 26px;
-  background: linear-gradient(90deg, #d31a2b 0%, #b8481f 55%, #d31a2b 100%);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+  background-image: url('/images/hero-gasolinera.jpg');
+  background-size: cover;
+  background-position: center 65%;
 }
-.hero__canopy::before {
+.hero::before {
   content: '';
   position: absolute;
-  left: 14%;
-  top: 100%;
-  width: 6px;
-  height: 160px;
-  background: rgba(255, 255, 255, 0.12);
-}
-.hero__canopy::after {
-  content: '';
-  position: absolute;
-  right: 14%;
-  top: 100%;
-  width: 6px;
-  height: 160px;
-  background: rgba(255, 255, 255, 0.12);
-}
-.hero__pumps {
-  position: absolute;
-  top: 44%;
-  left: 20%;
-  right: 20%;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-.hero__pump {
-  width: 56px;
-  height: 110px;
-  background: linear-gradient(180deg, #e7e7e7, #b9b9b9);
-  border-radius: 4px;
-  position: relative;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-.hero__pump::before {
-  content: '';
-  position: absolute;
-  top: 14px;
-  left: 8px;
-  right: 8px;
-  height: 34px;
-  background: #d31a2b;
-  border-radius: 2px;
-}
-.hero__lights {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(120px 60px at 30% 45%, rgba(255, 255, 255, 0.1), transparent 70%), radial-gradient(120px 60px at 70% 45%, rgba(255, 255, 255, 0.1), transparent 70%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(22, 22, 22, 0.55) 0%, rgba(22, 22, 22, 0.78) 100%);
+  pointer-events: none;
 }
 .hero::after {
   content: '';
   position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(22, 22, 22, 0.92) 0%, rgba(22, 22, 22, 0.55) 45%, rgba(22, 22, 22, 0.2) 100%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(22, 22, 22, 0.92) 0%, rgba(22, 22, 22, 0.6) 45%, rgba(22, 22, 22, 0.25) 100%);
   pointer-events: none;
 }
 .hero__content {
@@ -400,10 +350,6 @@ svg {
 @media (max-width: 640px) {
   .hero {
     min-height: 560px;
-  }
-  .hero__scene {
-    opacity: 0.35;
-    width: 70%;
   }
   .hero__content {
     padding-top: 64px;
@@ -602,23 +548,27 @@ svg {
   overflow: hidden;
   color: #ffffff;
   border-left: 4px solid #d31a2b;
+  background-size: cover;
+  background-position: center;
 }
 .service-card--img-gasolinera {
-  background-image: linear-gradient(155deg, rgba(17, 17, 17, 0.92), rgba(43, 43, 43, 0.92));
-  background-image: linear-gradient(160deg, rgba(12, 12, 12, 0.88), rgba(44, 44, 44, 0.88)), repeating-linear-gradient(115deg, rgba(211, 26, 43, 0.1) 0 2px, transparent 2px 26px);
+  background-image: linear-gradient(160deg, rgba(12, 12, 12, 0.55), rgba(44, 44, 44, 0.55)), url('/images/servicio-gasolinera.jpg');
 }
 .service-card--img-farmacia {
-  background-image: linear-gradient(160deg, rgba(18, 48, 33, 0.9), rgba(13, 32, 56, 0.9)), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px 22px);
+  background-image: linear-gradient(160deg, rgba(18, 48, 33, 0.55), rgba(13, 32, 56, 0.55)), url('/images/servicio-farmacia.jpg');
 }
 .service-card--img-supermercado {
-  background-image: linear-gradient(160deg, rgba(58, 42, 8, 0.9), rgba(92, 58, 13, 0.9)), repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px 20px);
+  background-image: linear-gradient(160deg, rgba(58, 42, 8, 0.55), rgba(92, 58, 13, 0.55)), url('/images/servicio-supermercado.jpg');
 }
 .service-card--img-restaurante {
-  background-image: linear-gradient(160deg, rgba(58, 15, 15, 0.9), rgba(92, 22, 22, 0.9)), repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px 24px);
+  background-image: linear-gradient(160deg, rgba(58, 15, 15, 0.55), rgba(92, 22, 22, 0.55)), url('/images/servicio-restaurante.jpg');
 }
 .service-card__scrim {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.78) 0%, transparent 55%);
 }
 .service-card__body {
@@ -721,7 +671,9 @@ svg {
 }
 .testimonial__image {
   aspect-ratio: 4 / 3;
-  background: linear-gradient(160deg, rgba(39, 74, 44, 0.92), rgba(26, 44, 61, 0.92)), radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.12), transparent 55%);
+  background: linear-gradient(160deg, rgba(10, 10, 10, 0.2), rgba(10, 10, 10, 0.35)), url('/images/teupasenti-pueblo.jpg');
+  background-size: cover;
+  background-position: center;
   border-radius: 2px;
 }
 .testimonial__badge {
@@ -862,6 +814,8 @@ svg {
   width: 100%;
   height: 100%;
   min-height: 340px;
+  border: 0;
+  display: block;
 }
 .contact {
   display: grid;
@@ -1139,6 +1093,45 @@ svg {
   min-height: 340px;
   border: 0;
   display: block;
+}
+.location-gallery {
+  padding: 70px 24px 90px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.location-gallery__title {
+  font-family: 'Archivo Black', 'Arial Black', Helvetica, sans-serif;
+  font-size: clamp(24px, 3vw, 34px);
+  color: #1c1c1c;
+  text-align: center;
+  margin: 0 0 36px;
+}
+.location-gallery__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 960px) {
+  .location-gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.location-gallery__item {
+  margin: 0;
+  box-shadow: 0 14px 34px rgba(22, 22, 22, 0.14);
+}
+.location-gallery__item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+.location-gallery__item figcaption {
+  background: #1c1c1c;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px;
 }
 #supermercado-categorias .section-heading {
   padding-top: 40px;
