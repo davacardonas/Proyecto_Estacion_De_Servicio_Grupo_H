@@ -2,6 +2,390 @@
     padding-top: 40px;
 }
 
+.page-hero--farmacia {
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1576671081837-49000212a370?q=80&w=1098&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 18px;
+        transform: translateX(-50%);
+        .eyebrow-label();
+        font-size: 10px;
+        letter-spacing: 0.16em;
+        color: fade(@color-white, 45%);
+        border: 1px dashed fade(@color-white, 30%);
+        padding: 6px 14px;
+        border-radius: @radius;
+        pointer-events: none;
+        white-space: nowrap;
+    }
+}
+
+.placeholder-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: @radius;
+    border: 1px dashed fade(@color-ink, 22%);
+    background:
+        repeating-linear-gradient(135deg, fade(@color-ink, 4%) 0 2px, transparent 2px 22px),
+        linear-gradient(160deg, fade(#d8d3c4, 70%), fade(#eae6da, 70%));
+    color: fade(@color-ink, 42%);
+    text-align: center;
+    padding: 20px;
+
+    svg {
+        width: 40px;
+        height: 40px;
+        opacity: 0.7;
+    }
+
+    span {
+        .eyebrow-label();
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        line-height: 1.5;
+    }
+
+    &--avatar {
+        aspect-ratio: 1 / 1;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        flex-shrink: 0;
+
+        svg {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+.farmacia-why {
+    background: @color-near-black;
+    padding: 88px 24px 92px;
+
+    .section-heading {
+        color: @color-white;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 22px;
+        margin-top: 12px;
+    }
+
+    @media (max-width: @bp-tablet) {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: @bp-mobile) {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.why-card {
+    background: @color-dark-panel;
+    border: 1px solid fade(@color-white, 8%);
+    border-radius: @radius;
+    padding: 34px 26px;
+    transition: transform 180ms @ease, border-color 180ms @ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: @color-red;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: fade(@color-red, 16%);
+        color: @color-red;
+        margin-bottom: 20px;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__name {
+        font-family: @font-body;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: @color-white;
+        margin: 0 0 8px;
+    }
+
+    &__desc {
+        font-size: 13px;
+        color: fade(@color-white, 62%);
+        margin: 0;
+    }
+}
+
+.farmacia-mission {
+    background: @color-white;
+    padding: 90px 24px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1.05fr 1fr;
+        gap: 60px;
+        align-items: center;
+    }
+
+    &__eyebrow {
+        .eyebrow-label();
+        color: @color-red;
+        display: block;
+        margin-bottom: 14px;
+    }
+
+    &__heading {
+        font-family: @font-display;
+        font-size: clamp(24px, 3vw, 32px);
+        line-height: 1.15;
+        color: @color-ink;
+        margin: 0 0 18px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 26px 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 13px;
+            color: @color-ink;
+
+            svg {
+                width: 16px;
+                height: 16px;
+                color: @color-white;
+                background: @color-red;
+                border-radius: 50%;
+                padding: 3px;
+                flex-shrink: 0;
+                box-sizing: content-box;
+            }
+        }
+    }
+
+    @media (max-width: @bp-tablet) {
+        &__inner {
+            grid-template-columns: 1fr;
+            gap: 36px;
+        }
+
+        &__media {
+            order: -1;
+            max-width: 420px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.farmacia-brands {
+    background: @color-cream;
+    padding: 64px 24px 72px;
+    border-top: 1px solid @color-line;
+    border-bottom: 1px solid @color-line;
+
+    &__subtitle {
+        margin: -6px 0 28px;
+        max-width: 520px;
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+}
+
+.brand-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 30px;
+    background: @color-white;
+    border: 1px solid @color-line;
+    border-radius: @radius;
+    font-family: @font-display;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: @color-ink;
+    min-width: 150px;
+    text-align: center;
+    transition: border-color 180ms @ease, color 180ms @ease, transform 180ms @ease;
+
+    &:hover {
+        border-color: @color-red;
+        color: @color-red;
+        transform: translateY(-2px);
+    }
+}
+
+.farmacia-services {
+    background: @color-white;
+    padding: 88px 24px 92px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 12px;
+    }
+
+    @media (max-width: @bp-tablet) {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: @bp-mobile) {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 26px;
+    background: @color-cream;
+    border-left: 4px solid @color-red;
+    border-radius: @radius;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: @color-white;
+        color: @color-red;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__name {
+        font-family: @font-body;
+        font-weight: 800;
+        font-size: 13.5px;
+        letter-spacing: 0.03em;
+        color: @color-ink;
+        margin: 0 0 6px;
+    }
+
+    &__desc {
+        font-size: 13px;
+        color: @color-muted;
+        margin: 0;
+    }
+}
+
+.farmacia-pharmacist {
+    background: @color-near-black;
+    padding: 88px 24px 96px;
+
+    &__heading {
+        color: @color-white;
+        justify-content: center;
+    }
+}
+
+.pharmacist-card {
+    max-width: 720px;
+    margin: 12px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    background: @color-dark-panel;
+    border: 1px solid fade(@color-white, 8%);
+    border-radius: @radius;
+    padding: 40px;
+
+    &__name {
+        font-family: @font-display;
+        font-size: 20px;
+        color: @color-white;
+        margin: 0 0 6px;
+    }
+
+    &__role {
+        .eyebrow-label();
+        color: @color-red;
+        margin: 0 0 16px;
+    }
+
+    &__bio {
+        color: fade(@color-white, 78%);
+        font-size: 14px;
+        margin: 0 0 14px;
+    }
+
+    &__quote {
+        font-family: @font-body;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 14px;
+        color: fade(@color-white, 60%);
+        margin: 0;
+        padding-left: 14px;
+        border-left: 2px solid @color-red;
+    }
+
+    @media (max-width: @bp-mobile) {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px 24px;
+
+        &__quote {
+            border-left: none;
+            border-top: 2px solid @color-red;
+            padding-left: 0;
+            padding-top: 12px;
+        }
+    }
+}
+
 .farmacia-products {
     padding: 88px 24px;
     background: @color-cream;
@@ -81,29 +465,6 @@
         align-items: center;
         gap: 8px;
         z-index: 1;
-    }
-
-    &__cart {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        border: none;
-        background: @color-near-black;
-        color: @color-white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: background-color 180ms @ease;
-
-        svg {
-            width: 16px;
-            height: 16px;
-        }
-
-        &:hover {
-            background: @color-red;
-        }
     }
 
     &__help {

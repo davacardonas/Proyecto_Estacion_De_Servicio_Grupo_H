@@ -296,6 +296,86 @@
         }
       ]
     },
+    "mission": {
+      "eyebrow": "NUESTRA FARMACIA",
+      "heading": "COMPROMETIDOS CON TU SALUD",
+      "paragraph1": "Dentro del Texaco Centro de Servicio, nuestra farmacia nació con la misión de acercar medicamentos y productos de cuidado personal a quienes viajan y a las familias de Teupasenti, con atención cálida y profesional los 365 días del año.",
+      "paragraph2": "Trabajamos con proveedores certificados y personal capacitado para garantizar que cada producto que llevás a casa cumpla con los más altos estándares de calidad y seguridad.",
+      "highlights": [
+        "Personal capacitado y cercano",
+        "Atención todos los días del año",
+        "Medicamentos con y sin receta"
+      ]
+    },
+    "brands": {
+      "heading": "MARCAS QUE DISTRIBUIMOS",
+      "subtitle": "Trabajamos con laboratorios reconocidos para garantizarte calidad y respaldo.",
+      "items": [
+        "MK",
+        "Genfar",
+        "Bagó",
+        "Eurofarma",
+        "PISA",
+        "Procaps",
+        "Tecnofarma",
+        "Saval",
+        "Stein",
+        "Abbott",
+        "Bayer",
+        "Pfizer",
+        "Roche",
+        "Sanofi",
+        "Novartis",
+        "AstraZeneca",
+        "GSK",
+        "Merck",
+        "Johnson & Johnson",
+        "Grünenthal"
+      ]
+    },
+    "services": {
+      "heading": "SERVICIOS DE LA FARMACIA",
+      "items": [
+        {
+          "icon": "syringe",
+          "name": "APLICACIÓN DE INYECCIONES",
+          "description": "Personal capacitado para aplicar tu tratamiento con seguridad e higiene."
+        },
+        {
+          "icon": "pulse",
+          "name": "TOMA DE PRESIÓN",
+          "description": "Control de presión arterial sin costo, rápido y confiable."
+        },
+        {
+          "icon": "droplet",
+          "name": "MEDICIÓN DE GLUCOSA",
+          "description": "Chequeo de glucosa en sangre con equipo calibrado."
+        },
+        {
+          "icon": "truck",
+          "name": "SERVICIO A DOMICILIO",
+          "description": "Llevamos tus medicamentos hasta la puerta de tu casa."
+        },
+        {
+          "icon": "baby",
+          "name": "PRODUCTOS PARA BEBÉ",
+          "description": "Pañales, fórmulas y cuidado especializado para los más pequeños."
+        },
+        {
+          "icon": "skin",
+          "name": "PRODUCTOS DERMATOLÓGICOS",
+          "description": "Línea completa para el cuidado de la piel recomendada por especialistas."
+        }
+      ]
+    },
+    "pharmacist": {
+      "eyebrow": "FARMACÉUTICO DESTACADO",
+      "heading": "UNA CARA CONOCIDA PARA ORIENTARTE",
+      "name": "Q.F. Daniel Andrés Martínez",
+      "role": "Químico Farmacéutico Colegiado",
+      "bio": "Nuestro equipo está capacitado para orientarte sobre el uso correcto de los medicamentos.",
+      "quote": "Mi compromiso es que cada persona salga de la farmacia con la orientación y confianza que necesita."
+    },
     "products": {
       "heading": "PROMOCIONES DEL MES",
       "items": [

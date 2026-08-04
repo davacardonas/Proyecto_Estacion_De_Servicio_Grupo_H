@@ -18,7 +18,7 @@
     {{> header nav=nav site=site}}
 
     <main>
-        <section class="page-hero">
+        <section class="page-hero page-hero--farmacia">
             <span class="page-hero__eyebrow">{{farmacia.eyebrow}}</span>
             <h1 class="page-hero__title">{{farmacia.title}}</h1>
             <p class="page-hero__subtitle">{{farmacia.subtitle}}</p>
@@ -57,21 +57,73 @@
             </div>
         </section>
 
-        <section class="hours" id="farmacia-confianza">
+        <section class="farmacia-why" id="farmacia-confianza">
             <div class="container">
                 <h2 class="section-heading"><span class="section-heading__bar"></span>{{farmacia.trust.heading}}
                 </h2>
-            </div>
-            <div class="container hours__grid">
-                {{#each farmacia.trust.items}}
-                <div class="hours__item">
-                    <span class="hours__icon">{{icon this.icon}}</span>
-                    <span class="hours__text">
-                        <span class="hours__name">{{this.name}}</span>
-                        <span class="hours__schedule">{{this.schedule}}</span>
-                    </span>
+                <div class="farmacia-why__grid">
+                    {{#each farmacia.trust.items}}
+                    <article class="why-card">
+                        <span class="why-card__icon">{{icon this.icon}}</span>
+                        <p class="why-card__name">{{this.name}}</p>
+                        <p class="why-card__desc">{{this.schedule}}</p>
+                    </article>
+                    {{/each}}
                 </div>
-                {{/each}}
+            </div>
+        </section>
+
+        <section class="farmacia-mission" id="farmacia-mision">
+            <div class="container farmacia-mission__inner">
+                <div class="farmacia-mission__text">
+                    <span class="farmacia-mission__eyebrow">{{farmacia.mission.eyebrow}}</span>
+                    <h2 class="farmacia-mission__heading">{{farmacia.mission.heading}}</h2>
+                    <p>{{farmacia.mission.paragraph1}}</p>
+                    <p>{{farmacia.mission.paragraph2}}</p>
+                    <ul class="farmacia-mission__list">
+                        {{#each farmacia.mission.highlights}}
+                        <li>{{icon "cross"}}{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="farmacia-mission__media">
+                    <img 
+                        src="https://images.unsplash.com/photo-1642055514517-7b52288890ec?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="Imagen de la farmacia" 
+                        class="farmacia-mission__image"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="farmacia-brands" id="farmacia-marcas">
+            <div class="container">
+                <h2 class="section-heading"><span class="section-heading__bar"></span>{{farmacia.brands.heading}}
+                </h2>
+                <p class="farmacia-brands__subtitle">{{farmacia.brands.subtitle}}</p>
+                <div class="farmacia-brands__grid">
+                    {{#each farmacia.brands.items}}
+                    <span class="brand-chip">{{this}}</span>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+
+        <section class="farmacia-services" id="farmacia-servicios">
+            <div class="container">
+                <h2 class="section-heading"><span class="section-heading__bar"></span>{{farmacia.services.heading}}
+                </h2>
+                <div class="farmacia-services__grid">
+                    {{#each farmacia.services.items}}
+                    <article class="service-item">
+                        <span class="service-item__icon">{{icon this.icon}}</span>
+                        <div class="service-item__body">
+                            <p class="service-item__name">{{this.name}}</p>
+                            <p class="service-item__desc">{{this.description}}</p>
+                        </div>
+                    </article>
+                    {{/each}}
+                </div>
             </div>
         </section>
 
@@ -85,10 +137,7 @@
                     <article class="product-card">
                         <div class="product-card__media">
                             <span class="product-card__badge">{{this.badge}}</span>
-                            <div class="product-card__actions">
-                                <button class="product-card__cart" type="button" aria-label="Agregar al carrito">{{icon "cart"}}</button>
-                                <button class="product-card__help" type="button" aria-label="Más información">?</button>
-                            </div>
+                            
                             <img class="product-card__img" src="{{this.image}}" alt="{{this.name}}" loading="lazy">
                         </div>
                         <div class="product-card__body">
@@ -101,6 +150,28 @@
                 </div>
             </div>
         </section>
+
+        <section class="farmacia-pharmacist" id="farmacia-equipo">
+            <div class="container">
+                <h2 class="section-heading farmacia-pharmacist__heading"><span class="section-heading__bar"></span>{{farmacia.pharmacist.eyebrow}}
+                </h2>
+                <div class="pharmacist-card">
+                    <div class="pharmacist-card__avatar">
+                        <img 
+                        src="https://images.unsplash.com/photo-1712215544003-af10130f8eb3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                        alt="Imagen de la farmacia" 
+                        class="farmacia-mission__image"
+                        >
+                    </div>
+                    <div class="pharmacist-card__body">
+                        <p class="pharmacist-card__name">{{farmacia.pharmacist.name}}</p>
+                        <p class="pharmacist-card__role">{{farmacia.pharmacist.role}}</p>
+                        <p class="pharmacist-card__bio">{{farmacia.pharmacist.bio}}</p>
+                        <p class="pharmacist-card__quote">&ldquo;{{farmacia.pharmacist.quote}}&rdquo;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     {{> footer footer=footer}}
@@ -110,3 +181,4 @@
 </body>
 
 </html>
+

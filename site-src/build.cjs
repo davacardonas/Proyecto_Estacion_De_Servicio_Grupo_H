@@ -20,7 +20,14 @@ const icons = {
   mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg>',
   clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>',
   coffee: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M7 4c0 1-1 1-1 2M11 4c0 1-1 1-1 2M15 4c0 1-1 1-1 2"/></svg>',
-  dessert: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 11h12l-1.2 8.4A2 2 0 0 1 14.8 21H9.2a2 2 0 0 1-2-1.6L6 11z"/><path d="M7 11a5 5 0 0 1 10 0"/><path d="M12 3v3M9 4.5l1 2M15 4.5l-1 2"/></svg>'
+  dessert: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 11h12l-1.2 8.4A2 2 0 0 1 14.8 21H9.2a2 2 0 0 1-2-1.6L6 11z"/><path d="M7 11a5 5 0 0 1 10 0"/><path d="M12 3v3M9 4.5l1 2M15 4.5l-1 2"/></svg>',
+  image: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16.5l-5.4-5.4a1 1 0 0 0-1.4 0L6 19"/></svg>',
+  syringe: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M18.5 2.5l3 3-2 2-3-3z"/><path d="M17.5 5.5L6 17M9 8l2 2M6.5 10.5l2 2"/><path d="M4 20l1.3-3.7L7.7 18z"/></svg>',
+  pulse: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12h4l2-6.5 3 13 2.5-9.5 1.5 3H21.5"/></svg>',
+  droplet: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6.2 7.1 6.2 11.6A6.2 6.2 0 0 1 5.8 14.6C5.8 10.1 12 3 12 3z"/></svg>',
+  truck: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h11v10H2z"/><path d="M13 10h4l4 3.5V16h-8z"/><circle cx="6.5" cy="18.2" r="1.6"/><circle cx="17" cy="18.2" r="1.6"/></svg>',
+  baby: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="9" width="8" height="11" rx="2.5"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/><path d="M8 13h8"/></svg>',
+  skin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="8" width="10" height="13" rx="2"/><rect x="9.5" y="4" width="5" height="4" rx="1"/><path d="M9 13h6"/></svg>'
 };
 
 Handlebars.registerHelper('icon', function (name) {
