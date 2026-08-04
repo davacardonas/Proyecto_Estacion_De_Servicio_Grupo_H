@@ -22,32 +22,36 @@
   overflow: hidden;
   color: @color-white;
   border-left: 4px solid @color-red;
+  background-size: cover;
+  background-position: center;
 
   &--img-gasolinera {
-    .card-image(#111111, #2b2b2b);
     background-image:
-      linear-gradient(160deg, fade(#0c0c0c, 88%), fade(#2c2c2c, 88%)),
-      repeating-linear-gradient(115deg, fade(@color-red, 10%) 0 2px, transparent 2px 26px);
+      linear-gradient(160deg, fade(#0c0c0c, 55%), fade(#2c2c2c, 55%)),
+      url('/images/servicio-gasolinera.jpg');
   }
   &--img-farmacia {
     background-image:
-      linear-gradient(160deg, fade(#123021, 90%), fade(#0d2038, 90%)),
-      repeating-linear-gradient(90deg, fade(@color-white, 6%) 0 1px, transparent 1px 22px);
+      linear-gradient(160deg, fade(#123021, 55%), fade(#0d2038, 55%)),
+      url('/images/servicio-farmacia.jpg');
   }
   &--img-supermercado {
     background-image:
-      linear-gradient(160deg, fade(#3a2a08, 90%), fade(#5c3a0d, 90%)),
-      repeating-linear-gradient(45deg, fade(@color-white, 6%) 0 1px, transparent 1px 20px);
+      linear-gradient(160deg, fade(#3a2a08, 55%), fade(#5c3a0d, 55%)),
+      url('/images/servicio-supermercado.jpg');
   }
   &--img-restaurante {
     background-image:
-      linear-gradient(160deg, fade(#3a0f0f, 90%), fade(#5c1616, 90%)),
-      repeating-linear-gradient(-45deg, fade(@color-white, 6%) 0 1px, transparent 1px 24px);
+      linear-gradient(160deg, fade(#3a0f0f, 55%), fade(#5c1616, 55%)),
+      url('/images/servicio-restaurante.jpg');
   }
 
   &__scrim {
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: linear-gradient(0deg, fade(#000, 78%) 0%, transparent 55%);
   }
 
