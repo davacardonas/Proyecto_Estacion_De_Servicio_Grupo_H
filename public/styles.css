@@ -1133,6 +1133,89 @@ svg {
   text-align: center;
   padding: 12px;
 }
+.location__hours {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.location__hours svg {
+  width: 20px;
+  height: 20px;
+  color: #d31a2b;
+  flex-shrink: 0;
+}
+.location__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.location__actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.location__actions .btn svg {
+  width: 18px;
+  height: 18px;
+}
+.btn--wa {
+  background: #25D366;
+  color: #ffffff;
+}
+.btn--wa:hover {
+  background: #1fb055;
+}
+.btn--call {
+  background: #ffffff;
+  color: #1c1c1c;
+}
+.btn--call:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+.location-nearby {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px 20px;
+}
+.location-nearby__title {
+  font-family: 'Archivo Black', 'Arial Black', Helvetica, sans-serif;
+  font-size: clamp(24px, 3vw, 34px);
+  color: #1c1c1c;
+  text-align: center;
+  margin: 0 0 32px;
+}
+.location-nearby__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 960px) {
+  .location-nearby__list {
+    grid-template-columns: 1fr;
+  }
+}
+.location-nearby__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f2efe9;
+  padding: 18px 20px;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+.location-nearby__item svg {
+  width: 22px;
+  height: 22px;
+  color: #d31a2b;
+  flex-shrink: 0;
+}
 #supermercado-categorias .section-heading {
   padding-top: 40px;
 }
