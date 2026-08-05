@@ -7,34 +7,34 @@
     }
   },
   "nav": [
-   {
-    "label": "GASOLINERA",
-    "href": "index.html"
-  },
-  {
-    "label": "FARMACIA",
-    "href": "Farmacia.html"
-  },
-  {
-    "label": "SUPERMERCADO",
-    "href": "Supermercado.html"
-  },
-  {
-    "label": "RESTAURANTE",
-    "href": "Restaurante.html"
-  },
-  {
-    "label": "UBICACIÓN",
-    "href": "ubicacion.html"
-  },
-  {
-    "label": "NOSOTROS",
-    "href": "Nosotros.html"
-  },
-  {
-    "label": "CONTACTO",
-    "href": "index.html#contacto"
-  }
+    {
+      "label": "GASOLINERA",
+      "href": "index.html"
+    },
+    {
+      "label": "FARMACIA",
+      "href": "Farmacia.html"
+    },
+    {
+      "label": "SUPERMERCADO",
+      "href": "Supermercado.html"
+    },
+    {
+      "label": "RESTAURANTE",
+      "href": "Restaurante.html"
+    },
+    {
+      "label": "UBICACIÓN",
+      "href": "ubicacion.html"
+    },
+    {
+      "label": "NOSOTROS",
+      "href": "Nosotros.html"
+    },
+    {
+      "label": "CONTACTO",
+      "href": "index.html#contacto"
+    }
   ],
   "hero": {
     "eyebrow": "TEUPASENTI, EL PARAÍSO · HONDURAS",
@@ -209,6 +209,94 @@
         "description": "Gaseosas, jugos, agua embotellada y snacks para el camino, siempre bien fríos."
       }
     ],
+    "products": {
+      "heading": "PRODUCTOS DESTACADOS",
+      "subtitle": "Una probada de lo que encontrás en nuestros anaqueles, listo para llevar en tu parada.",
+      "items": [
+        {
+          "badge": "MÁS VENDIDO",
+          "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?q=80&w=600&auto=format&fit=crop",
+          "category": "Bebidas",
+          "name": "Agua Pura 600ml",
+          "price": "L. 15",
+          "unit": "por botella"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=600&auto=format&fit=crop",
+          "category": "Bebidas",
+          "name": "Gaseosa 600ml",
+          "price": "L. 20",
+          "unit": "por botella"
+        },
+        {
+          "badge": "-10%",
+          "image": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?q=80&w=600&auto=format&fit=crop",
+          "category": "Snacks",
+          "name": "Papas Fritas",
+          "price": "L. 18",
+          "unit": "bolsa 45g"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?q=80&w=600&auto=format&fit=crop",
+          "category": "Snacks",
+          "name": "Galletas Dulces",
+          "price": "L. 12",
+          "unit": "paquete"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?q=80&w=600&auto=format&fit=crop",
+          "category": "Abarrotes",
+          "name": "Café Instantáneo",
+          "price": "L. 45",
+          "unit": "frasco 100g"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1549931319-a545749fcd15?q=80&w=600&auto=format&fit=crop",
+          "category": "Panadería",
+          "name": "Pan de Sandwich",
+          "price": "L. 35",
+          "unit": "bolsa"
+        },
+        {
+          "badge": "FRESCO",
+          "image": "https://images.unsplash.com/photo-1518569656558-1f25e69d93d7?q=80&w=600&auto=format&fit=crop",
+          "category": "Lácteos y Huevos",
+          "name": "Huevos",
+          "price": "L. 55",
+          "unit": "cartón de 12"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1600628421055-4d30de868b8f?q=80&w=600&auto=format&fit=crop",
+          "category": "Abarrotes",
+          "name": "Tortillas de Maíz",
+          "price": "L. 20",
+          "unit": "docena"
+        }
+      ]
+    },
+    "tiendita": {
+      "eyebrow": "TIENDITA DE PARADA",
+      "title": "TU PARADA RÁPIDA, COMO LA CONOCÉS",
+      "paragraph": "Además del mercado, tenemos el rincón de conveniencia junto a los surtidores: café recién hecho, snacks calientes y todo lo que necesitás sin bajarte mucho tiempo del camino, al estilo de las tienditas de gasolinera que ya conocés en Honduras.",
+      "perks": [
+        {
+          "icon": "coffee",
+          "text": "Café para llevar, recién preparado"
+        },
+        {
+          "icon": "dessert",
+          "text": "Snacks y comida rápida caliente"
+        },
+        {
+          "icon": "clock",
+          "text": "Atención rápida, entrás y salís"
+        },
+        {
+          "icon": "cart",
+          "text": "Pago en efectivo o con tarjeta"
+        }
+      ]
+    },
     "hours": {
       "heading": "HORARIO DEL SUPERMERCADO",
       "paragraph": "Abierto todos los días para que encuentres lo que necesitás antes o después de tu viaje.",
@@ -410,179 +498,141 @@
       ]
     }
   },
-"restaurante": {
-  "eyebrow": "RESTAURANTE",
-  "title": "COMIDA TÍPICA HONDUREÑA",
-  "subtitle": "Disfrutá de desayunos, almuerzos y cenas preparados al momento con ingredientes frescos y el auténtico sabor catracho.",
-  "menuHeading": "NUESTRO MENÚ",
-
-  "menuGroups": [
-    {
-      "icon": "fork",
-      "name": "DESAYUNOS",
-      "items": [
-        {
-          "name": "Desayuno Típico",
-          "price": "L. 145",
-          "description": "Huevos, frijoles, queso, plátano maduro, mantequilla y tortillas."
-        },
-        {
-          "name": "Baleada Especial",
-          "price": "L. 70",
-          "description": "Con huevo, aguacate, carne y queso rallado."
-        },
-        {
-          "name": "Omelette",
-          "price": "L. 120",
-          "description": "Jamón, queso y vegetales frescos."
-        }
-      ]
-    },
-    {
-      "icon": "fork",
-      "name": "ALMUERZOS",
-      "items": [
-        {
-          "name": "Pollo Frito",
-          "price": "L. 185",
-          "description": "Acompañado de arroz, ensalada y tajadas."
-        },
-        {
-          "name": "Carne Asada",
-          "price": "L. 210",
-          "description": "Con chimol, frijoles y tortillas recién hechas."
-        },
-        {
-          "name": "Chuleta de Cerdo",
-          "price": "L. 195",
-          "description": "Con arroz, ensalada y tajadas."
-        }
-      ]
-    },
-    {
-      "icon": "fork",
-      "name": "BEBIDAS",
-      "items": [
-        {
-          "name": "Café de Altura",
-          "price": "L. 35",
-          "description": "Café hondureño recién preparado."
-        },
-        {
-          "name": "Jugo Natural",
-          "price": "L. 45",
-          "description": "Naranja, piña o sandía."
-        },
-        {
-          "name": "Refresco",
-          "price": "L. 30",
-          "description": "Variedad de sabores."
-        }
-      ]
-    }
-  ],
-
-  "special": {
-    "heading": "HORARIO DEL RESTAURANTE",
-    "paragraph": "Te esperamos todos los días con desayunos desde muy temprano y almuerzos preparados al momento.",
-    "schedule": "Lun–Dom · 6am–9pm",
-    "reference": "Vía principal, Teupasenti, El Paraíso",
-    "phone": "(504) 2200-1234"
-  },
-
-  "reservation": {
-    "heading": "RESERVÁ TU MESA",
-    "paragraph": "Si viajas en grupo o deseas asegurar tu mesa, completa el formulario y nos comunicaremos contigo.",
-
-    "form": {
-      "name": {
-        "label": "NOMBRE",
-        "placeholder": "Tu nombre completo"
+  "restaurante": {
+    "eyebrow": "RESTAURANTE",
+    "title": "COMIDA TÍPICA HONDUREÑA",
+    "subtitle": "Disfrutá de desayunos, almuerzos y cenas preparados al momento con ingredientes frescos y el auténtico sabor catracho.",
+    "menuHeading": "NUESTRO MENÚ",
+    "menuGroups": [
+      {
+        "icon": "fork",
+        "name": "DESAYUNOS",
+        "items": [
+          {
+            "name": "Desayuno Típico",
+            "price": "L. 145",
+            "description": "Huevos, frijoles, queso, plátano maduro, mantequilla y tortillas."
+          },
+          {
+            "name": "Baleada Especial",
+            "price": "L. 70",
+            "description": "Con huevo, aguacate, carne y queso rallado."
+          },
+          {
+            "name": "Omelette",
+            "price": "L. 120",
+            "description": "Jamón, queso y vegetales frescos."
+          }
+        ]
       },
-      "phone": {
-        "label": "TELÉFONO",
-        "placeholder": "Tu número de contacto"
+      {
+        "icon": "fork",
+        "name": "ALMUERZOS",
+        "items": [
+          {
+            "name": "Pollo Frito",
+            "price": "L. 185",
+            "description": "Acompañado de arroz, ensalada y tajadas."
+          },
+          {
+            "name": "Carne Asada",
+            "price": "L. 210",
+            "description": "Con chimol, frijoles y tortillas recién hechas."
+          },
+          {
+            "name": "Chuleta de Cerdo",
+            "price": "L. 195",
+            "description": "Con arroz, ensalada y tajadas."
+          }
+        ]
       },
-      "date": {
-        "label": "FECHA",
-        "placeholder": "DD/MM/AAAA"
-      },
-      "guests": {
-        "label": "PERSONAS",
-        "placeholder": "Cantidad de personas"
-      },
-      "submit": "RESERVAR MESA"
-    }
-  }
-},
-"nosotros":{
-
-    "eyebrow":"NOSOTROS",
-
-    "title":"MÁS DE 25 AÑOS SIRVIENDO A TEUPASENTI",
-
-    "subtitle":"Somos un centro de servicio comprometido con brindar calidad, confianza y atención personalizada a cada uno de nuestros clientes.",
-
-    "heading":"QUIÉNES SOMOS",
-
-    "paragraph1":"Desde 1998 Texaco Centro de Servicio Teupasenti ha sido un punto de referencia para viajeros y familias que buscan combustible de calidad, alimentos, medicamentos y productos de primera necesidad.",
-
-    "paragraph2":"Nuestro compromiso es ofrecer una atención cálida, instalaciones modernas y servicios confiables que hagan de cada visita una excelente experiencia.",
-
-    "stats":[
-
-        {
-
-            "value":"25+",
-
-            "label":"Años de experiencia"
-
-        },
-
-        {
-
-            "value":"24/7",
-
-            "label":"Gasolinera abierta"
-
-        },
-
-        {
-
-            "value":"4",
-
-            "label":"Servicios principales"
-
-        },
-
-        {
-
-            "value":"100%",
-
-            "label":"Calidad Texaco"
-
-        }
-
+      {
+        "icon": "fork",
+        "name": "BEBIDAS",
+        "items": [
+          {
+            "name": "Café de Altura",
+            "price": "L. 35",
+            "description": "Café hondureño recién preparado."
+          },
+          {
+            "name": "Jugo Natural",
+            "price": "L. 45",
+            "description": "Naranja, piña o sandía."
+          },
+          {
+            "name": "Refresco",
+            "price": "L. 30",
+            "description": "Variedad de sabores."
+          }
+        ]
+      }
     ],
-
-    "mission":{
-
-        "title":"MISIÓN",
-
-        "text":"Brindar productos y servicios de alta calidad que satisfagan las necesidades de nuestros clientes, ofreciendo atención amable y confianza en cada visita."
-
+    "special": {
+      "heading": "HORARIO DEL RESTAURANTE",
+      "paragraph": "Te esperamos todos los días con desayunos desde muy temprano y almuerzos preparados al momento.",
+      "schedule": "Lun–Dom · 6am–9pm",
+      "reference": "Vía principal, Teupasenti, El Paraíso",
+      "phone": "(504) 2200-1234"
     },
-
-    "vision":{
-
-        "title":"VISIÓN",
-
-        "text":"Ser el centro de servicio líder en la región, reconocido por nuestra excelencia, innovación y compromiso con la comunidad."
-
+    "reservation": {
+      "heading": "RESERVÁ TU MESA",
+      "paragraph": "Si viajas en grupo o deseas asegurar tu mesa, completa el formulario y nos comunicaremos contigo.",
+      "form": {
+        "name": {
+          "label": "NOMBRE",
+          "placeholder": "Tu nombre completo"
+        },
+        "phone": {
+          "label": "TELÉFONO",
+          "placeholder": "Tu número de contacto"
+        },
+        "date": {
+          "label": "FECHA",
+          "placeholder": "DD/MM/AAAA"
+        },
+        "guests": {
+          "label": "PERSONAS",
+          "placeholder": "Cantidad de personas"
+        },
+        "submit": "RESERVAR MESA"
+      }
     }
-
-},
-
+  },
+  "nosotros": {
+    "eyebrow": "NOSOTROS",
+    "title": "MÁS DE 25 AÑOS SIRVIENDO A TEUPASENTI",
+    "subtitle": "Somos un centro de servicio comprometido con brindar calidad, confianza y atención personalizada a cada uno de nuestros clientes.",
+    "heading": "QUIÉNES SOMOS",
+    "paragraph1": "Desde 1998 Texaco Centro de Servicio Teupasenti ha sido un punto de referencia para viajeros y familias que buscan combustible de calidad, alimentos, medicamentos y productos de primera necesidad.",
+    "paragraph2": "Nuestro compromiso es ofrecer una atención cálida, instalaciones modernas y servicios confiables que hagan de cada visita una excelente experiencia.",
+    "stats": [
+      {
+        "value": "25+",
+        "label": "Años de experiencia"
+      },
+      {
+        "value": "24/7",
+        "label": "Gasolinera abierta"
+      },
+      {
+        "value": "4",
+        "label": "Servicios principales"
+      },
+      {
+        "value": "100%",
+        "label": "Calidad Texaco"
+      }
+    ],
+    "mission": {
+      "title": "MISIÓN",
+      "text": "Brindar productos y servicios de alta calidad que satisfagan las necesidades de nuestros clientes, ofreciendo atención amable y confianza en cada visita."
+    },
+    "vision": {
+      "title": "VISIÓN",
+      "text": "Ser el centro de servicio líder en la región, reconocido por nuestra excelencia, innovación y compromiso con la comunidad."
+    }
+  },
   "contact": {
     "heading": "ESCRIBINOS",
     "paragraph": "¿Tenés preguntas, sugerencias o querés información sobre nuestros servicios? Completá el formulario y te respondemos pronto.",

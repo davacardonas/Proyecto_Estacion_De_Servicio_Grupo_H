@@ -56,6 +56,51 @@
             </div>
         </section>
 
+        <section class="market" id="supermercado-productos">
+            <div class="container market__head">
+                <h2 class="section-heading"><span class="section-heading__bar"></span>{{supermercado.products.heading}}
+                </h2>
+                <p class="market__subtitle">{{supermercado.products.subtitle}}</p>
+            </div>
+            <div class="market__scroller">
+                <div class="market__track">
+                    {{#each supermercado.products.items}}
+                    <article class="market-card">
+                        {{#if this.badge}}
+                        <span class="market-card__badge">{{this.badge}}</span>
+                        {{/if}}
+                        <div class="market-card__image">
+                            <img src="{{this.image}}" alt="{{this.name}}" loading="lazy">
+                        </div>
+                        <div class="market-card__body">
+                            <span class="market-card__category">{{this.category}}</span>
+                            <h3 class="market-card__name">{{this.name}}</h3>
+                            <div class="market-card__footer">
+                                <span class="market-card__price">{{this.price}}</span>
+                                <span class="market-card__unit">{{this.unit}}</span>
+                            </div>
+                        </div>
+                    </article>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+
+        <section class="tiendita">
+            <div class="container tiendita__inner">
+                <div class="tiendita__copy">
+                    <span class="promo__eyebrow">{{supermercado.tiendita.eyebrow}}</span>
+                    <h2 class="tiendita__title">{{supermercado.tiendita.title}}</h2>
+                    <p class="tiendita__desc">{{supermercado.tiendita.paragraph}}</p>
+                </div>
+                <ul class="tiendita__perks">
+                    {{#each supermercado.tiendita.perks}}
+                    <li>{{icon this.icon}}<span>{{this.text}}</span></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </section>
+
         <section class="contact container" id="supermercado-pedido">
             <div class="contact__info">
                 <h2 class="section-heading"><span class="section-heading__bar"></span>{{supermercado.order.heading}}
