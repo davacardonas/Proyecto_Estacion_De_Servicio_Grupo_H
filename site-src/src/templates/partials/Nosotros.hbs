@@ -83,6 +83,82 @@
 
 </section>
 
+<section class="about-gallery">
+
+    <h2 class="about-gallery__title">{{nosotros.gallery.heading}}</h2>
+
+    <div class="about-gallery__grid">
+
+        {{#each nosotros.gallery.items}}
+
+        <figure class="about-gallery__item">
+            <img src="{{this.image}}" alt="{{this.caption}} · Texaco Centro de Servicio Teupasenti" loading="lazy">
+            <figcaption>{{this.caption}}</figcaption>
+        </figure>
+
+        {{/each}}
+
+    </div>
+
+</section>
+
+<section class="founder" id="fundador">
+
+    <div class="container founder__inner">
+
+        <div class="founder__media">
+            <img
+                src="{{nosotros.founder.image}}"
+                alt="Retrato de {{nosotros.founder.name}}, fundador de Texaco Centro de Servicio"
+                class="founder__image"
+                loading="lazy"
+            >
+        </div>
+
+        <div class="founder__body">
+
+            <span class="founder__eyebrow">{{nosotros.founder.eyebrow}}</span>
+            <h2 class="founder__heading">{{nosotros.founder.heading}}</h2>
+
+            <p class="founder__name">{{nosotros.founder.name}}</p>
+            <p class="founder__role">{{nosotros.founder.role}}</p>
+
+            <p>{{nosotros.founder.bio}}</p>
+            <p>{{nosotros.founder.bio2}}</p>
+
+            <p class="founder__quote">&ldquo;{{nosotros.founder.quote}}&rdquo;</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="values container" id="valores">
+
+    <h2 class="section-heading values__heading">
+        <span class="section-heading__bar"></span>
+        {{nosotros.values.heading}}
+    </h2>
+
+    <p class="values__subtitle">{{nosotros.values.subtitle}}</p>
+
+    <div class="values__grid">
+
+        {{#each nosotros.values.items}}
+
+        <article class="value-card">
+            <span class="value-card__icon">{{icon this.icon}}</span>
+            <h3 class="value-card__name">{{this.name}}</h3>
+            <p class="value-card__desc">{{this.description}}</p>
+        </article>
+
+        {{/each}}
+
+    </div>
+
+</section>
+
 </main>
 
 {{> footer footer=footer}}

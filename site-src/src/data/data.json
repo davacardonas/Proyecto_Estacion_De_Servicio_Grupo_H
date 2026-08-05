@@ -631,6 +631,63 @@
     "vision": {
       "title": "VISIÓN",
       "text": "Ser el centro de servicio líder en la región, reconocido por nuestra excelencia, innovación y compromiso con la comunidad."
+    },
+    "gallery": {
+      "heading": "Conocé nuestras instalaciones",
+      "items": [
+        {
+          "image": "/images/hero-gasolinera.jpg",
+          "caption": "Área de combustible"
+        },
+        {
+          "image": "/images/servicio-supermercado.jpg",
+          "caption": "Supermercado"
+        },
+        {
+          "image": "/images/servicio-restaurante.jpg",
+          "caption": "Restaurante"
+        },
+        {
+          "image": "/images/servicio-farmacia.jpg",
+          "caption": "Farmacia"
+        }
+      ]
+    },
+    "founder": {
+      "eyebrow": "NUESTRA HISTORIA",
+      "heading": "EL HOMBRE DETRÁS DEL PROYECTO",
+      "name": "Don Amaya",
+      "role": "Fundador de Texaco Centro de Servicio",
+      "image": "https://images.unsplash.com/photo-1590074251929-76f7c465a3bd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "bio": "Don Amaya llegó a Teupasenti hace más de 25 años con una idea sencilla: ofrecer a su comunidad un lugar confiable donde surtir combustible, comer bien y encontrar lo que necesitaran sin salir del pueblo. Lo que empezó como una pequeña gasolinera de carretera creció, paso a paso, hasta convertirse en el centro de servicio que hoy conoces.",
+      "bio2": "Hoy sigue de cerca cada área del negocio, convencido de que el buen servicio se construye con trabajo constante y con la confianza de la gente de Teupasenti.",
+      "quote": "Este negocio se construyó para servir a nuestra gente, no solo para vender."
+    },
+    "values": {
+      "heading": "LO QUE NOS DEFINE",
+      "subtitle": "Los principios que guían cada área de nuestro centro de servicio.",
+      "items": [
+        {
+          "icon": "star",
+          "name": "Calidad",
+          "description": "Productos y combustible con los más altos estándares Texaco."
+        },
+        {
+          "icon": "cross",
+          "name": "Confianza",
+          "description": "Más de 25 años de relaciones honestas con nuestros clientes."
+        },
+        {
+          "icon": "pin",
+          "name": "Cercanía",
+          "description": "Comprometidos con Teupasenti y con quienes viven aquí."
+        },
+        {
+          "icon": "clock",
+          "name": "Disponibilidad",
+          "description": "Siempre listos para atenderte, todos los días del año."
+        }
+      ]
     }
   },
   "contact": {
