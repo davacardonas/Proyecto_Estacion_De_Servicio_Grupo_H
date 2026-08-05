@@ -1,0 +1,63 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Compilar HTML (Handlebars) y CSS (LESS)
+        run: npm run build:site
+
+      - name: Armar carpeta del sitio
+        run: |
+          mkdir -p _site
+          cp index.html ubicacion.html Supermercado.html Restaurante.html Farmacia.html Nosotros.html _site/
+          cp -r public/* _site/
+
+      - name: Corregir rutas absolutas para GitHub Pages (project page)
+        run: |
+          BASE="${{ github.event.repository.name }}"
+          find _site -name "*.html" -exec sed -i \
+            -e "s#=\"/styles.css\"#=\"/${BASE}/styles.css\"#g" \
+            -e "s#=\"/images/#=\"/${BASE}/images/#g" \
+            {} \;
+
+      - name: Subir artefacto
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
